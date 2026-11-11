@@ -1523,6 +1523,15 @@ namespace eval ::MSN {
 			::MSN::WriteSB ns "CHG" "$new_status [::config::getKey clientid]"
 		}
 
+		# MSNP12 servers do not always send a CHG acknowledgement. Reflect the
+		# requested state locally once the notification server is connected; the
+		# CHG handler below will still reconcile it with any server response.
+		if {[ns cget -stat] == "o" && [::MSN::myStatusIs] != $new_status} {
+			::MSN::setMyStatus $new_status
+			cmsn_draw_online 1 1
+			send_dock "STATUS" $new_status
+		}
+
 		#Reset automatic status change to 0
 		set autostatuschange 0
 	}
@@ -6582,8 +6591,8 @@ proc cmsn_ns_handler {item {message ""}} {
 			return 0
 		}
 		CHG {
+			::abook::setVolatileData myself msnobj [lindex $item 4]
 			if { [::MSN::myStatusIs] != [lindex $item 2] } {
-				::abook::setVolatileData myself msnobj [lindex $item 4]
 				::MSN::setMyStatus [lindex $item 2]
 
 				cmsn_draw_online 1 1

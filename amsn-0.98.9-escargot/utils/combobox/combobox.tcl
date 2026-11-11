@@ -374,6 +374,8 @@ proc ::combobox::SetBindings {w} {
     # listbox children reach their bindings instead of the combobox frame.
     bind $widgets(dropdown) <ButtonPress-1> \
 	[list ::combobox::HandlePopupClick $widgets(this) %X %Y]
+    bind $widgets(dropdown) <ButtonRelease-1> \
+	[list ::combobox::HandlePopupRelease $widgets(this) %W %X %Y]
 
     bind $widgets(vsb) <ButtonPress-1>   {continue}
     bind $widgets(vsb) <ButtonRelease-1> {continue}
@@ -419,6 +421,27 @@ proc ::combobox::HandlePopupClick {w rootX rootY} {
 	$rootY < $top || $rootY >= $bottom} {
 	$widgets(this) close
 	return -code break
+    }
+}
+
+# A global grab may deliver the release to the popup toplevel instead of
+# the listbox. In that case, map the pointer position back to a list index.
+proc ::combobox::HandlePopupRelease {w eventWidget rootX rootY} {
+    upvar ::combobox::${w}::widgets widgets
+
+    if {$eventWidget eq $widgets(listbox)} {
+	return
+    }
+
+    set listLeft [winfo rootx $widgets(listbox)]
+    set listTop [winfo rooty $widgets(listbox)]
+    set listRight [expr {$listLeft + [winfo width $widgets(listbox)]}]
+    set listBottom [expr {$listTop + [winfo height $widgets(listbox)]}]
+
+    if {$rootX >= $listLeft && $rootX < $listRight &&
+	$rootY >= $listTop && $rootY < $listBottom} {
+	set y [expr {$rootY - $listTop}]
+	::combobox::Select $widgets(this) [$widgets(listbox) nearest $y]
     }
 }
 
