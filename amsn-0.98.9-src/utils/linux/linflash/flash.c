@@ -26,6 +26,9 @@
 // Include the header file
 #include "flash.h"
 
+static int demands_attention(Display *display, Window root, Window window, int flash);
+static int setUrgencyHint(Display *display, Window window, int flash);
+
 
 /*
   Function : Tk_FlashWindow
@@ -140,7 +143,7 @@ int flash_window (Tcl_Interp *interp, Tcl_Obj *CONST objv1, int flash) {
   return (demandsSuccess?TCL_OK:TCL_ERROR);
 }
 
-int demands_attention(Display *display, Window root, Window window, int flash) {
+static int demands_attention(Display *display, Window root, Window window, int flash) {
   static Atom demandsAttention, wmState, wmSupported;
   Atom type_return;
   Atom *curr_atom = NULL;
@@ -194,7 +197,7 @@ int demands_attention(Display *display, Window root, Window window, int flash) {
   return hasFlag;
 }
 
-int setUrgencyHint(Display *display, Window window, int flash) {
+static int setUrgencyHint(Display *display, Window window, int flash) {
   XWMHints *hints;
 
   hints = XGetWMHints(display, window);

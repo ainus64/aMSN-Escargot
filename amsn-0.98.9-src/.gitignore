@@ -3,10 +3,35 @@ Makefile
 config.log
 config.status
 config.cache
+config.h
+stamp-h1
+autom4te.cache/
+.deps/
+.libs/
 *.o
 *.so
 *.a
+*.lo
+*.la
+*.lai
+*.dll
+*.dylib
 amsn
+
+# Configuración y datos locales de aMSN creados al probarlo
+amsn_config/
+/config.xml
+/config.xml.old
+/tlsconfig.tcl
+/states.xml
+/states.xml.old
+/logs/
+/webcam/
+/amsn_received/
+
+# Cachés de herramientas
+__pycache__/
+*.py[cod]
 
 # Archivos temporales y backups de editores
 *~

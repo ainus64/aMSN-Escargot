@@ -35,6 +35,8 @@ snit::type SOAPRequest {
 	}
 
 	method SendSOAPRequest { } {
+		# Apply the Escargot-compatible TLS negotiation before opening HTTPS.
+		::amsn::tlsCompatibilityOptions
 		if {$ttl > $options(-ttl)} {
 			error "Too many retried"
 		}

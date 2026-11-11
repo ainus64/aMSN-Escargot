@@ -63,7 +63,10 @@ namespace eval ::config {
 			::config::setKey cam_in_cw 0
 		}
 
-		::config::setKey protocoloverride 0
+		# Escargot supports aMSN's legacy TWN flow on MSNP12; skip the
+		# connect-time fallback to Microsoft's MSNP15 SSO flow.
+		::config::setKey protocol 12
+		::config::setKey protocoloverride 1
 
 		::config::setKey receiveddir [::config::getDefaultDownloadDir]
 
@@ -243,10 +246,10 @@ namespace eval ::config {
 		::config::setKey showtimestamps 1		;#Show timestamps on messages ("Yes" by default)
 		::config::setKey leftdelimiter \[		;#Left Timestamps' delimiter  '[' by default
 		::config::setKey rightdelimiter \]		;#Right Timestamps' delimiter ']' by default
-		::config::setKey default_ns_server "messenger.hotmail.com:1863"
-		::config::setKey start_ns_server "messenger.hotmail.com:1863"
-		::config::setKey default_gateway_server "gateway.messenger.hotmail.com"
-		::config::setKey start_gateway_server "gateway.messenger.hotmail.com"		
+		::config::setKey default_ns_server "msnmsgr.escargot.chat:1863"
+		::config::setKey start_ns_server "msnmsgr.escargot.chat:1863"
+		::config::setKey default_gateway_server "msnmsgr.escargot.chat"
+		::config::setKey start_gateway_server "msnmsgr.escargot.chat"
 		::config::setKey activeautoupdate 1		;#Active the auto update
 		::config::setKey allowbadwords 1		;#Disable censure on nicks
 		::config::setKey enablebanner 1		;#Show or Hide AMSN Banner (By default Show)
@@ -1008,6 +1011,27 @@ proc load_config {} {
 				::config::setKey soundcommand "./utils/macosx/sndplay \$sound"
 			}
 		}
+	}
+	# Move existing profiles from Microsoft's retired servers to Escargot,
+	# while preserving any server values the user configured manually.
+	if {[::config::getKey default_ns_server] == "messenger.hotmail.com:1863"} {
+		::config::setKey default_ns_server "msnmsgr.escargot.chat:1863"
+	}
+	if {[::config::getKey start_ns_server] == "messenger.hotmail.com:1863"} {
+		::config::setKey start_ns_server "msnmsgr.escargot.chat:1863"
+	}
+	if {[::config::getKey default_gateway_server] == "gateway.messenger.hotmail.com"} {
+		::config::setKey default_gateway_server "msnmsgr.escargot.chat"
+	}
+	if {[::config::getKey start_gateway_server] == "gateway.messenger.hotmail.com"} {
+		::config::setKey start_gateway_server "msnmsgr.escargot.chat"
+	}
+	# Profiles that used aMSN's automatic protocol selection were forced to
+	# MSNP15. Move those profiles to Escargot's supported MSNP12 flow, while
+	# leaving an explicitly selected protocol alone.
+	if {[::config::getKey protocoloverride] == 0} {
+		::config::setKey protocol 12
+		::config::setKey protocoloverride 1
 	}
 	#Force to change the path to the new path of plwav.exe
 	if { [OnWin] } {

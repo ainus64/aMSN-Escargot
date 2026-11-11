@@ -22,6 +22,9 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#ifdef __linux__
+#include <sys/sysmacros.h>
+#endif
 
 #include <dlfcn.h>
 #ifndef RTLD_NOW
@@ -860,7 +863,7 @@ int ng_dev_users(struct ng_devstate *dev)
     return dev->refcount;
 }
 
-int ng_chardev_open(char *device, int flags, int major, int complain, int is_v4l2)
+int ng_chardev_open(char *device, int flags, int expected_major, int complain, int is_v4l2)
 {
     struct stat st;
     int fd = -1;
@@ -893,10 +896,10 @@ int ng_chardev_open(char *device, int flags, int major, int complain, int is_v4l
 	    fprintf(stderr,"%s: not a charcter device\n",device);
 	goto err;
     }
-    if (major(st.st_rdev) != major) {
+	if (major(st.st_rdev) != expected_major) {
 	if (complain)
 	    fprintf(stderr,"%s: wrong major number (expected %d, got %d)\n",
-		    device, major, major(st.st_rdev));
+		    device, expected_major, major(st.st_rdev));
 	goto err;
     }
     fcntl(fd,F_SETFD,FD_CLOEXEC);
