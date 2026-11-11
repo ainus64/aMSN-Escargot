@@ -156,10 +156,6 @@ snit::widgetadaptor loginscreen {
 		set forgot_pass_link [$self create text 0 0 -anchor nw -text [trans forgot_pass]]
 		# New account
 		set new_account_link [$self create text 0 0 -anchor nw -text [trans new_account]]
-		# Check for newer amsn version
-		set check_version_icon [$self create image 0 0 -anchor nw -image [::skin::loadPixmap download]]
-		set check_version_text [$self create text 0 0 -anchor nw -text [trans checkver] -fill [::skin::getKey loginurlfg]]
-
 		set more_label [$self create text 0 0 -anchor nw -text [trans more]]
 
 		# Place widgets in framework
@@ -190,8 +186,6 @@ snit::widgetadaptor loginscreen {
 		# Links
 		contentmanager add element login_screen main links forgot_pass -widget $self -tag $forgot_pass_link -pady 2
 		contentmanager add element login_screen main links new_account -widget $self -tag $new_account_link -pady 2
-		contentmanager add element login_screen main check_ver icon -widget $self -tag $check_version_icon -padx 4 -valign middle
-		contentmanager add element login_screen main check_ver text -widget $self -tag $check_version_text -padx 4 -valign middle
 		contentmanager add element login_screen main more label	-widget $self	-tag $more_label
 
 		# Set font for canvas all text items
@@ -236,8 +230,6 @@ snit::widgetadaptor loginscreen {
 		$self CanvasTextToLink login_screen main more label "$self ShowMore"
 		$self CanvasTextToLink login_screen main links forgot_pass [list launch_browser "https://accountservices.passport.net/uiresetpw.srf?lc=1033"]
 		$self CanvasTextToLink login_screen main links new_account [list launch_browser "https://accountservices.passport.net/reg.srf?sl=1&lc=1033"]
-		$self CanvasTextToLink login_screen main check_ver text "::autoupdate::check_version"
-
 		$self FillLoginFields
 
 		# Register for events

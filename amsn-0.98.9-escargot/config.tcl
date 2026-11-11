@@ -426,7 +426,6 @@ namespace eval ::config {
 			[list local libtls_temp folder TLS tlsexplain] \
 			[list local notifytyping bool notifytyping] \
 			[list local lineflushlog bool lineflushlog] \
-			[list local autocheckver bool autocheckver] \
 			[list local storename bool storenickname] \
 			[list local globaloverride bool globaloverride ] \
 			[list local escape_close_cw bool escapeclosescw ] \
