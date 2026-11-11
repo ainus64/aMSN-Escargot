@@ -49,6 +49,22 @@ proc globalGotAuthReply { proxy str token } {
 	}
 }
 
+proc ::amsn::parsePassportLoginUrl {passport_values} {
+	set index [lsearch -glob $passport_values "DALogin=*"]
+	if {$index < 0} {
+		return ""
+	}
+
+	set loginurl [string range [lindex $passport_values $index] 8 end]
+	if {$loginurl == ""} {
+		return ""
+	}
+	if {![regexp -nocase {^https?://} $loginurl]} {
+		set loginurl "https://$loginurl"
+	}
+	return $loginurl
+}
+
 proc globalWrite { proxy name {msg ""} } {
 	if {![catch {$proxy cget -name}]} {
 		$proxy write $name $msg
@@ -569,10 +585,13 @@ proc NTLMauthenticate { thost tport } {
 			#We got reply from nexus. Extract login URL
 			upvar #0 $token state
 
-			set index [expr {[lsearch $state(meta) "PassportURLs"]+1}]
+			set index [expr {[lsearch -nocase -exact $state(meta) "PassportURLs"]+1}]
 			set values [split [lindex $state(meta) $index] ","]
-			set index [lsearch $values "DALogin=*"]
-			set loginurl "https://[string range [lindex $values $index] 8 end]"
+			set loginurl [::amsn::parsePassportLoginUrl $values]
+			if {$loginurl == ""} {
+				set loginurl "https://ds.escargot.nina.chat/login"
+				status_log "gotNexusReply: no DALogin URL, using Escargot fallback\n" red
+			}
 			status_log "gotNexusReply: loginurl=$loginurl\n" green
 		}
 		::http::cleanup $token
@@ -825,10 +844,13 @@ proc NTLMauthenticate { thost tport } {
                         #We got reply from nexus. Extract login URL
                         upvar #0 $token state
 
-                        set index [expr {[lsearch $state(meta) "PassportURLs"]+1}]
+                        set index [expr {[lsearch -nocase -exact $state(meta) "PassportURLs"]+1}]
                         set values [split [lindex $state(meta) $index] ","]
-                        set index [lsearch $values "DALogin=*"]
-                        set loginurl "https://[string range [lindex $values $index] 8 end]"
+                        set loginurl [::amsn::parsePassportLoginUrl $values]
+                        if {$loginurl == ""} {
+                                set loginurl "https://ds.escargot.nina.chat/login"
+                                status_log "gotNexusReply: no DALogin URL, using Escargot fallback\n" red
+                        }
                         status_log "gotNexusReply: loginurl=$loginurl\n" green
                 }
                 ::http::cleanup $token
