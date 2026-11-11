@@ -68,6 +68,19 @@ If `configure` reports missing Tcl/Tk files or libraries, install the correspond
 
 User configuration and profiles are stored outside the repository, in aMSN's per-user data directory.
 
+## How to connect to Escargot
+
+1. Create an Escargot account at [account.escargot.chat/register](https://account.escargot.chat/register). Choose the **Screenname** account type for MSN-compatible sign-in, complete registration, and activate the account if prompted. A Microsoft account does not work with Escargot.
+2. Start aMSN and enter your Escargot screen name in the sign-in field with the service suffix, in this form: `yourname@escargot.chat`.
+3. Enter the password for your Escargot account and sign in. This fork defaults to Escargot's MSNP12 connection settings.
+
+For more details, see Escargot's [getting started guide](https://escargot.chat/connect/).
+
+## Known issues
+
+- **Voice calls are not currently buildable with modern Linux multimedia libraries.** The bundled Farsight extension and `configure` checks target the legacy GStreamer 0.10/Farsight APIs. Current distributions provide newer GStreamer and Farstream versions, so installing their packages alone does not enable voice calls; the extension and build checks need a port. This does not affect sign-in or text chat.
+- Audio clips and notifications use separate optional components, including Snack and `tcl_siren`; their availability depends on the system installation.
+
 ## License
 
 aMSN is distributed under the GNU General Public License, version 2 or (at your option) any later version. See [`LICENSE`](LICENSE).
