@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<plugin>
+	<name>Countdown</name>
+	<author>Youness Alaoui (a.k.a KaKaRoTo). Unimatrix for the idea </author>
+	<description>Shows a countdown to a specific date</description>
+	<description_fr>Affiche un décompte vers une date spécifique</description_fr>
+	<description_es>Muestra una cuenta atrás para una fecha específica</description_es>
+	<description_hu>Visszaszámlálás egy megadott időpontig</description_hu>
+	<description_fi>Näyttää tiettyyn päivämäärään kuluvan ajan</description_fi>
+	<description_it>Visualizza nel messaggio personale un conto alla rovescia rispetto alla data specificata</description_it>
+	<amsn_version>0.97</amsn_version>
+	<plugin_version>0.3</plugin_version>
+	<plugin_file>countdown.tcl</plugin_file>
+	<plugin_namespace>countdown</plugin_namespace>
+	<init_procedure>InitPlugin</init_procedure>
+	<deinit_procedure>DeInit</deinit_procedure>
+	<cvs_version>9948</cvs_version>
+
+	<lang>
+		<langcode>en</langcode>
+		<version>1.2</version>
+	</lang>
+	
+	<lang>
+		<langcode>fr</langcode>
+		<version>1.2</version>
+	</lang>
+
+        <lang>
+                <langcode>es</langcode>
+                <version>1.1</version>
+        </lang>
+
+        <lang>
+                <langcode>fi</langcode>
+                <version>1.1</version>
+        </lang>
+
+        <lang>
+                <langcode>it</langcode>
+                <version>1.2</version>
+        </lang>
+
+        <URL>
+                <main>http://www.amsn-project.net/autoupdater/plugins/countdown/countdown.tcl</main>
+                <plugininfo>http://www.amsn-project.net/autoupdater/plugins/countdown/plugininfo.xml</plugininfo>
+                <lang>http://www.amsn-project.net/autoupdater/plugins/countdown/lang/lang$langcode</lang>
+                <file>http://www.amsn-project.net/autoupdater/plugins/countdown/$file</file>
+        </URL>
+
+
+</plugin>
+
+

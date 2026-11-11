@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<plugin>
+	<name>gnotify</name>
+	<author>Youness Alaoui (a.k.a KaKaRoTo)</author>
+	<description>Plugin to check Gmail accounts in aMSN and notify you with the email information. A kind of "Gmail Notifer" clone for aMSN.</description>
+	<description_hu>Ellenőrzi a Gmail fiókokat, és értesít az e-mail információkkal. A "Gmail Notifer" klónja az aMSN-hez.</description_hu>
+	<amsn_version>0.98</amsn_version>
+	<plugin_version>0.93</plugin_version>
+	<plugin_file>gnotify.tcl</plugin_file>
+	<plugin_namespace>gnotify</plugin_namespace>
+	<init_procedure>Init</init_procedure>
+	<deinit_procedure>DeInit</deinit_procedure>
+	<cvs_version>12344</cvs_version>
+	<file>
+		<path>pixmaps/gnotify_empty.png</path>
+		<version>7821</version>
+	</file>
+
+	<file>
+		<path>pixmaps/gnotify_error.png</path>
+		<version>7821</version>
+	</file>
+
+	<file>
+		<path>pixmaps/gnotify_new.png</path>
+		<version>7821</version>
+	</file>
+
+	<file>
+		<path>pixmaps/gnotify_error.png</path>
+		<version>7815</version>
+	</file>
+
+	<file>
+		<path>pixmaps/star.png</path>
+		<version>7821</version>
+	</file>
+
+	<file>
+		<path>pixmaps/paperclip.png</path>
+		<version>7812</version>
+	</file>
+
+	<lang>
+		<langcode>en</langcode>
+		<version>7815</version>
+	</lang>
+
+	<lang>
+		<langcode>fr</langcode>
+		<version>7815</version>
+	</lang>
+
+	<lang>
+		<langcode>es</langcode>
+		<version>8322</version>
+	</lang>
+	<lang>
+		<langcode>hu</langcode>
+		<version>8999</version>
+	</lang>
+	<lang>
+		<langcode>lt</langcode>
+		<version>10397</version>
+	</lang>
+
+	<URL>
+		<main>http://www.amsn-project.net/autoupdater/plugins/gnotify/gnotify.tcl</main>
+		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/gnotify/plugininfo.xml</plugininfo>
+		<lang>http://www.amsn-project.net/autoupdater/plugins/gnotify/lang/lang$langcode</lang>
+		<file>http://www.amsn-project.net/autoupdater/plugins/gnotify/$file</file>
+	</URL>
+
+</plugin>

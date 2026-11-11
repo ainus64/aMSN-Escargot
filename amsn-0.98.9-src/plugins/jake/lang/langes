@@ -1,0 +1,179 @@
+amsn_lang_version 2
+
+state Activado
+
+guiname Nombre del bot
+guihelptext Mensaje de ayuda
+guinresultsgoogle Numero de resultados por defecto cuando se busca en google
+guinresultsmegaupload Numero de resultados por defecto cuando se busca en megaupload
+guinresultssongs Numero de resultados por defecto cuando se buscan canciones
+guinresultsyoutube Numero de resultados por defecto cuando se busca en youtube
+
+txtcommand Comando
+txtprm Parametros
+txtdsc Descripcion
+txtexl Ejemplo
+txtcommands Comandos disponibles
+txtcmderr Se ha producido un error. Quizas no has seguido bien las instrucciones de uso?
+txtcmdunknown No se que comando es
+txtchangestate Cambio estado a
+txtlogactivated activado!
+txtlogdesactivated desactivado!
+txtuptime Iniciado hace:
+txtlifetime Vivo desde hace: 
+txtyears años
+txtmonths meses
+txtdays dias
+txthours horas
+txtminutes minutos
+txtseconds secundos
+txtversion Version: 
+txtdictionarysize Tamaño del diccionario:
+txtregs registros
+txtnoresults No hay resultados.
+txtchangesearchwords Prueba a cambiar el orden de las palabras o la frase entera.
+txtstatenotonlinebutneverseen El usuario no esta conectado pero nunca ha sido visto.
+txtstateonline El usuario esta conectado en este momento.
+
+msgon Estoy activado.
+msgoff Estoy desactivado.
+
+cmdgoogle google
+dscgoogle Buscara en google
+prmgoogle \"palabra/s\" x (donde \"x\" es el numero de resultados que quieres que aparezcan. Si no pones un numero, seran mostrados $1 resultados.)
+exlgoogle !google \"Que es google?\" 2
+txtmaybe A lo mejor querias decir:
+
+cmddefine define
+dscdefine Definira una palabra
+prmdefine \"palabra\" x (donde \"x\" es el numero de resultados que quieres que aparezcan. Si no pones un numero, seran mostrados $1 resultados.)
+exldefine !define \"internet\" 1
+
+cmdhelp ayuda
+dschelp Ayuda/Informacion sobre los comandos disponibles. (si se escribe solo !ayuda, se mostraran los comandos disponibles)
+prmhelp \"comando\"
+exlhelp !ayuda \"!google\"
+
+cmdon on
+dscon Activa la capacidad de conversar
+prmon Este comando no acepta parametros
+exlon !on
+
+cmdoff off
+dscoff Desactiva la capacidad de conversar
+prmoff Este comando no acepta parametros
+exloff !off
+
+cmdhour hora
+dschour Dice la hora
+prmhour Este comando no acepta parametros
+exlhour !hora
+
+cmddate fecha
+dscdate Dice la fecha
+prmdate Este comando no acepta parametros
+exldate !fecha
+
+cmdstate estado
+dscstate Muestra informacion sobre un contacto o sobre jake
+prmstate \"messenger\" (Si no se pasa ningun parametro a este comando, se visualizara la informacion del bot)
+exlstate !estado \"alexandernst@gmail.com\"
+
+cmdlearn aprende
+dsclearn Añadira una palabra o frase al diccionario del bot
+prmlearn \"palabra o frase\" \"respuesta\"
+exllearn !aprende \"Hola!\" \"Hola, que tal?\"
+txtregadd Registro añadido con exito. Hay
+txterradd No se ha podido agregar la palabra porque ya se han alcanzado el maximo numero de posibles respuestas para la longitud de dicha palabra.
+
+cmdforget olvida
+dscforget Borrara una palabra o frase del diccionario del bot
+prmforget \"palabra o frase\"
+exlforget !olvida \"Hola!\"
+txtregdel Se ha/n borrado
+
+cmdyoutube youtube
+dscyoutube Buscara en youtube
+prmyoutube \"palabra/s\" x (donde \"x\" es el numero de resultados que quieres que aparezcan. Si no pones un numero, seran mostrados $1 resultados.)
+exlyoutube !youtube \"videos graciosos\" 5
+
+cmdexpr expresion
+dscexpr Calculara cualquier expresion matematica. Operadores soportados:\n abs( x ) - Valor absoluto (negativo si es negativo.)\n acos( x ) - Arcocoseno (resultado en radianes.)\n asin( x ) - Arcoseno (resultado en radianes.)\n atan( x ) - Arcotangente (resultado en radianes.)\n atan2( y , x ) - Arcotangente (resultado en radianes.)\n ceil( x ) - Redondeo a la alta (se debe usar con numeros decimales.)\n cos( x ) - Coseno (se debe usar con radianes.)\n cosh( x ) - Coseno hiperbolico.\n double( x ) - Convierte enteros a decimales.\n exp( x ) - Funccion exponencial.\n floor( x ) - Redondeo a la baja (se debe usar con numeros decimales.)\n fmod( x ) - Punto flotante.\n hypot( x , y ) - Calculador de la hipotenusa.\n int( x ) - Convierte numeros a enteros, sin redondear.\n log( x ) - Logaritmo.\n log10( x ) - Logaritmo en base 10.\n pow( x , y ) - Potencia.\n rand( ) - Numero aleatorio. Aleatoriaridad en el rango [0,1].\n round( x ) - Redondea.\n sin( x ) - Seno (se debe usar con radianes.)\n sinh( x ) - Seno hiperbolico.\n sqrt( x ) - Raiz cuadrada.\n srand( x ) - Numero aleatorio.\n tan( x ) - Tangente (se debe usar con radianes.)\n tanh( x ) - Tangente hiperbolico.
+prmexpr una expresion matematica
+exlexpr !expr 2 + 2
+
+cmdmegaupload megaupload
+dscmegaupload Buscara en megaupload
+prmmegaupload \"palabra/s\" x (donde \"x\" es el numero de resultados que quieres que aparezcan. Si no pones un numero, seran mostrados $1 resultados.)
+exlmegaupload !megaupload \"firefox\" 1
+
+cmdsong cancion
+dscsong Buscara canciones
+prmsong \"nombre de cancion y/o artista\" x (donde \"x\" es el numero de resultados que quieres que aparezcan. Si no pones un numero, seran mostrados $1 resultados.)
+exlsong !cancion \"caminando por la vida - melendi\" 3
+
+cmdtranslate traduce a
+dsctranslate Traducira un texto
+prmtranslate idioma \"texto\"
+exltranslate !traduce a ingles \"Hola, que tal?\"
+errtranslate Lo siento pero no se
+
+
+
+txthelpdownload Para descargar, una vez abierto el navegador, haz click en Archivo -> Guardar como... y guarda el archivo.
+
+txthelptranslate Error en la sintaxis del comando. La forma correcta de usar el traductor es: !traduce xx-yy texto, donde xx es el idioma actual e yy es el idioma al que se quiere traducir. Idiomas soportados: en (Ingles), es (Español), fr (Frances), it (Italiano), gr (Aleman)
+
+
+lngalbanian albanes
+lngarabic arabe
+lngarmenian armenio
+lngbasque vasco
+lngbelarusian bielorruso
+lngbengali bengali
+lngbosnian bosnio
+lngbreton breton
+lngbulgarian bulgaro
+lngcatalan catalan
+lngchinese-simplified chino-simplificado
+lngchinese-traditional chino-tradicional
+lngcroatian croata
+lngczech checo
+lngdanish danes
+lngdutch holandes
+lngenglish ingles
+lngesperanto esperanto
+lngfilipino filipino
+lngfinnish finlandes
+lngfrench frances
+lnggalician gallego
+lnggerman aleman
+lnggreek griego
+lnghebrew hebreo
+lnghungarian hungaro
+lngirish irlandes
+lngitalian italiano
+lngjapanese japones
+lngkorean coreano
+lnglatin latin
+lnglithuanian lituano
+lngmacedonian macedonio
+lngmongolian mongol
+lngnorwegian noruego
+lngpersian persa
+lngpolish polaco
+lngportuguese-brazil portugues-brazil
+lngportuguese-portugal portugues
+lngromanian rumano
+lngrussian ruso
+lngscots escoces
+lngserbian serbio
+lngserbo-croatian serbocroata
+lngslovak eslovaco
+lngslovenian esloveno
+lngspanish español
+lngswedish sueco
+lngturkish turco
+lngukrainian ucraniano
+lngvietnamese vietnamita
+lngwelsh gales

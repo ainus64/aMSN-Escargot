@@ -1,0 +1,14 @@
+# Archivos generados por configure y make
+Makefile
+config.log
+config.status
+config.cache
+*.o
+*.so
+*.a
+amsn
+
+# Archivos temporales y backups de editores
+*~
+*.bak
+*.swp

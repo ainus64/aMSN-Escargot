@@ -1,0 +1,159 @@
+amsn_lang_version 2
+#
+# ================================================
+# Language keys for main Games plugin
+# ================================================
+#
+load_game_failed N'a pas reussi à charger un jeu
+invite_sent Invitation envoyée
+accepted_invitation $1 a accepté
+declined_invitation $1 n'a pas accepté
+wants_to_play $1 vous invite à jouer
+Games Jeux
+TwoPlayerGames Jeux deux Joueurs
+MultiPlayerGames Jeux Multi-joueurs
+Dots_and_Boxes Points et Boites(Dots and Boxes)
+Hangman Pendu
+Sketch Sketch
+#Sketch Je dessine, tu devines!
+Accept Accepter
+Reject Refuser
+incompatible_version Warning, you do not use the same version of this plugin! You have version $1, while $2 uses version $3.
+missing_plugin $1 n'a probablement pas ce plugin ou ne l'a pas activé
+timeout La limite de temps a été mise à $1 seconds
+wrong_game_type Start two-player games in private windows and multi-player games in conference windows.
+advertise $1 requested an aMSN game with you. It seems that $2 does not have aMSN or does not have the Games plugin loaded. To be able to play with your friends, download aMSN at $3 and install the Games plugin available at $4.
+#
+# ================================================
+# Language keys used in Dots and Boxes
+# ================================================
+#
+specify_configuration Configurer le jeu
+select_color jouer avec quelle couleur?
+select_size Quelle taille de tableau voulez-vous?
+red Rouge
+yellow Jaune
+black Noir
+white Blanc
+random Au hasard
+challenge Challenge
+cancel Annuler
+wins gagné(s)
+draws Nul(s)
+your_turn C'est à votre tour.
+not_your_turn En attente de l'action de votre adversaire.
+movelist Liste des actions
+players Joueurs
+status Statut
+initializing Initialisation...
+game_over_win Game over. Félicitations vous avez gagné!
+game_over_lose Game over, vous aurez plus de chance la prochaine fois.
+game_over_draw Game over, Partie Nul ...
+click_rematch Cliquez pour rejouer
+quits $1 a quitté le jeu.
+margin_width Margin width
+margin_height Margin height
+width_of_box Width of box
+height_of_box Height of box
+dot_size Dot size
+space_around_dot Space around dot
+#
+# ================================================
+# Language keys used in Hangman
+# ================================================
+#
+alphabet {a á â à ä ã å Å Á Ã Ä À Â} b {c ç Ç} d {e é ê ë è É E Ê È} f g h {i í ì î ï Í Î Ï Ì} j k l m {n ñ Ñ} {o ó ô ö ò õ Ô Ò Ö Õ Ó} p q r s t {u ù ú ü û Ú Û Ü Ù} v w x y z
+send_word_to_guess Envoyer le mot que votre adversaire doit chercher.
+wait_for_word En attente du mot que l'adversaire doit vous envoyer.
+click_sends_guess Cliquer pour envoyer votre choix
+Scores Scores
+round Parties
+Word Mots
+invalid_word Word must contain more letters to guess and no underscores; try another word.
+game_started Jeu commencé cliquez sur les lettres ou tapez en une pour envoyer vos suggestions.
+you_hang Vous êtes pendu! (L'adversaire continu)
+word_found Mot trouvé! (L'adversaire continu)
+game_over_02 Vous avez perdu, l'adversaire  a trouvé: 0-2.
+game_over_20 Vous avez gagné, l'adversaire a perdu: 2-0.
+game_over_00 la partie est nul: 0-0.
+game_over_21 Vous avez gagné, Vous avez fait moins d'erreurs: 2-1.
+game_over_12 Vous avez perdu, l'adversaire a fait moins d'erreurs: 1-2.
+game_over_11 la partie est nul, même nombre d'erreurs: 1-1.
+fl_method Select Choix des lettres à données
+fl_none pas de lettre donnée
+fl_first donnez la première lettre
+fl_random Donnez les lettres au hasard
+guesses_remaining $1 tentatives restantes
+rematch_quick Votre adversaire vous attend, cliquez sur rejouer pour lancer une nouvelle partie.
+#
+# ================================================
+# Language keys used in Chess
+# ================================================
+#
+Chess Jeu d'échecs
+black Noir
+white Blanc
+#
+# ================================================
+# Language keys used in Sketch
+# ================================================
+#
+select_language Choisissez la langue pour ce jeu
+Time Temps
+wrong_guesses Mauvaises réponses
+sketch_tools Outils
+Color Couleur
+Eraser Effaceur
+Clear Effacer tout
+Skip Passer
+Save Sauvegarder
+make_guesses Faire une proposition
+Send Envoyer
+Violation Violation
+wait_for_host En attente de l'hôte pour commencer le jeu.
+wait_for_players Attendre que tout le monde soit arrivé avant de cliquer sur ce bouton ->
+Start Commencer
+save_drawing Sauvegarder ce dessin
+Round Round
+you_draw Vous devez dessiner $1.
+you_guess Vous devez donner le nom de ce qui est dessiné ; en $1.
+correct_guess Vous avez répondu juste ! c'était: $1.
+points $1 points
+choose_bkgcol Choisissez la couleur de fond
+empty_dictionary Ce dictionnaire ne contient aucun mot de cette langue; choisissez-en une autre.
+hourglass_courtesy Hourglass courtesy of Bernd Breitenbach.
+#
+# ================================================
+# Sketch word dictionary
+# -> Example Entry:
+# word_2 e-mail, email, mail
+# -> "e-mail" is the word that has to be drawn
+# -> "email" and "mail" are also full credits to the guessers
+# ================================================
+#
+word_0 ordinateur, computer, ordi
+word_1 avion
+word_2 e-mail, email, mail, courriel, mèl, courrier
+word_3 télévision, tv, television
+word_4 micro-ondes, microondes, micro-wave, microwave, micro-onde, microonde
+word_5 poulet, coq, poule
+word_6 echecs, echec
+word_7 enveloppe
+word_8 gâteau, cake
+word_9 cloche
+word_10 chien
+word_11 chat
+word_12 voiture
+word_13 arbre
+word_14 souris
+word_15 lunettes
+word_16 téléphone, mobile, telephone, portable, télèphone
+word_17 veste, chemise, pull
+word_18 chaussures, chaussure
+word_19 camera, camescope
+word_20 pomme, apple
+word_21 bateau, navire, titanic
+word_22 cheval
+word_23 fleur, fleurs
+word_24 table
+word_25 vélo, VTT, velo, bicyclette

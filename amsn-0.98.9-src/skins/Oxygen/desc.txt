@@ -1,0 +1,4 @@
+Oxygen Skin (default) by Dimitri Pandeleakis - Version: 2.1 (28.05.2010)
+Dedicated to the KDE Users
+License: GNU/GPL
+Contact: dimitris88@gmail.com
