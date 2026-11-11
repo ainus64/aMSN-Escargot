@@ -17,6 +17,19 @@ package require base64;
 # This should be converted to a proper package, to use with package require
 source socks.tcl	;# SOCKS5 proxy support
 
+# TclTLS 1.7 added explicit switches for TLS 1.0 through TLS 1.3. Keep
+# negotiation enabled across those versions so Escargot and the client can
+# select the highest mutually supported TLS version; never enable SSLv2/v3.
+proc ::amsn::tlsCompatibilityOptions {} {
+	if {![catch {package provide tls} tls_version] &&
+	    $tls_version != "" && [package vcompare $tls_version 1.7] >= 0} {
+		set tls_options [list -ssl2 0 -ssl3 0 -tls1 1 -tls1.1 1 -tls1.2 1]
+		catch {eval [linsert $tls_options 0 ::tls::init]}
+		return $tls_options
+	}
+	return [list]
+}
+
 #the framework for connections. You create an instance of this object only,
 #never the other proxy objects directly
 
@@ -46,6 +59,7 @@ proc globalWrite { proxy name {msg ""} } {
 #http://wiki.tcl.tk/2627
 #helped by patthoyts autoproxy!
 proc HTTPsecureSocket { args } {
+	::amsn::tlsCompatibilityOptions
 	set phost [::http::config -proxyhost]
 	set pport [::http::config -proxyport]
 	upvar host thost
@@ -92,7 +106,7 @@ proc HTTPsecureSocket { args } {
 		# now add tls to the socket and return it
 		fconfigure $socket -blocking 1 -buffering none -translation binary
 
-		::tls::import $socket -cadir $::CERT_DIR -command ::amsn::checkcert -request 1 -require 1
+		eval [concat [list ::tls::import $socket] [::amsn::tlsCompatibilityOptions] [list -cadir $::CERT_DIR -command ::amsn::checkcert -request 1 -require 1]]
 		# We need to foce the handshake while the socket is blocking for tls to actually work
 		::tls::handshake $socket
 		
@@ -106,6 +120,7 @@ proc HTTPsecureSocket { args } {
 }
 
 proc SOCKSsecureSocket { args } {
+	::amsn::tlsCompatibilityOptions
 	set phost [::http::config -proxyhost]
 	set pport [::http::config -proxyport]
 	upvar host thost
@@ -129,7 +144,7 @@ proc SOCKSsecureSocket { args } {
 		# now add tls to the socket and return it
 		fconfigure $socket -blocking 1 -buffering none -translation binary
 
-		::tls::import $socket -cadir $::CERT_DIR -command ::amsn::checkcert -request 1 -require 1
+		eval [concat [list ::tls::import $socket] [::amsn::tlsCompatibilityOptions] [list -cadir $::CERT_DIR -command ::amsn::checkcert -request 1 -require 1]]
 
 		# We need to foce the handshake while the socket is blocking for tls to actually work
 		::tls::handshake $socket
@@ -182,7 +197,7 @@ proc NTLMsecureSocket { args } {
   upvar port tport
 
   set s [NTLMauthenticate $thost $tport]
-  return [::tls::import $socket -cadir $::CERT_DIR -command ::amsn::checkcert -request 1 -require 1]
+  eval [concat [list ::tls::import $socket] [::amsn::tlsCompatibilityOptions] [list -cadir $::CERT_DIR -command ::amsn::checkcert -request 1 -require 1]]
 
 }
 
@@ -522,7 +537,7 @@ proc NTLMauthenticate { thost tport } {
 			set login_passport_url 0
 			degt_protocol $self
 
-			after 0 "catch {::http::geturl [list https://nexus.passport.com/rdr/pprdr.asp] -timeout 5000 -command {globalGotNexusReply $self}}"
+			after 0 "catch {::http::geturl [list https://msnmsgr.escargot.chat/rdr/pprdr.asp] -timeout 5000 -command {globalGotNexusReply $self}}"
 #		}
 	}
 
@@ -548,7 +563,7 @@ proc NTLMauthenticate { thost tport } {
 		global login_passport_url
 		if { [::http::status $token] != "ok" || [::http::ncode $token ] != 200 } {
 			#Nexus connection failed, so let's just set login URL manually
-			set loginurl "https://login.live.com/login2.srf"
+			set loginurl "https://ds.escargot.nina.chat/login"
 			status_log "gotNexusReply: error in nexus reply, getting url manually\n" red
 		} else {
 			#We got reply from nexus. Extract login URL
@@ -767,8 +782,8 @@ proc NTLMauthenticate { thost tport } {
                         set login_passport_url 0
                         degt_protocol $self
 
-			#::http::geturl [list https://nexus.passport.com/rdr/pprdr.asp] -timeout 10000 -command [list globalGotNexusReply $self]
-                        if { [catch {::http::geturl https://nexus.passport.com/rdr/pprdr.asp -timeout 10000 -command [list globalGotNexusReply $self]} res]} {
+			#::http::geturl [list https://msnmsgr.escargot.chat/rdr/pprdr.asp] -timeout 10000 -command [list globalGotNexusReply $self]
+                        if { [catch {::http::geturl https://msnmsgr.escargot.chat/rdr/pprdr.asp -timeout 10000 -command [list globalGotNexusReply $self]} res]} {
 				MSN::logout
 				MSN::reconnect "proxy error: $res"
 				return -1
@@ -804,7 +819,7 @@ proc NTLMauthenticate { thost tport } {
                 global login_passport_url
                 if { [::http::status $token] != "ok" || [::http::ncode $token ] != 200 } {
                         #Nexus connection failed, so let's just set login URL manually
-                        set loginurl "https://login.live.com/login2.srf"
+                        set loginurl "https://ds.escargot.nina.chat/login"
                         status_log "gotNexusReply: error in nexus reply, getting url manually\n" red
                 } else {
                         #We got reply from nexus. Extract login URL

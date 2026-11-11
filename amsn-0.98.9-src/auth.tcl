@@ -220,7 +220,7 @@ snit::type SSOAuthentication {
 			set soap_req ""
 		}
 		set soap_req [SOAPRequest create %AUTO% \
-				  -url "https://login.live.com/RST.srf" \
+				  -url "https://ds.escargot.nina.chat/RST.srf" \
 				  -xml [$self getSSOXml] \
 				  -callback [list $self AuthenticateCallback $callbk]]
 		$soap_req SendSOAPRequest

@@ -243,10 +243,10 @@ namespace eval ::config {
 		::config::setKey showtimestamps 1		;#Show timestamps on messages ("Yes" by default)
 		::config::setKey leftdelimiter \[		;#Left Timestamps' delimiter  '[' by default
 		::config::setKey rightdelimiter \]		;#Right Timestamps' delimiter ']' by default
-		::config::setKey default_ns_server "messenger.hotmail.com:1863"
-		::config::setKey start_ns_server "messenger.hotmail.com:1863"
-		::config::setKey default_gateway_server "gateway.messenger.hotmail.com"
-		::config::setKey start_gateway_server "gateway.messenger.hotmail.com"		
+		::config::setKey default_ns_server "msnmsgr.escargot.chat:1863"
+		::config::setKey start_ns_server "msnmsgr.escargot.chat:1863"
+		::config::setKey default_gateway_server "msnmsgr.escargot.chat"
+		::config::setKey start_gateway_server "msnmsgr.escargot.chat"
 		::config::setKey activeautoupdate 1		;#Active the auto update
 		::config::setKey allowbadwords 1		;#Disable censure on nicks
 		::config::setKey enablebanner 1		;#Show or Hide AMSN Banner (By default Show)
@@ -1008,6 +1008,20 @@ proc load_config {} {
 				::config::setKey soundcommand "./utils/macosx/sndplay \$sound"
 			}
 		}
+	}
+	# Move existing profiles from Microsoft's retired servers to Escargot,
+	# while preserving any server values the user configured manually.
+	if {[::config::getKey default_ns_server] == "messenger.hotmail.com:1863"} {
+		::config::setKey default_ns_server "msnmsgr.escargot.chat:1863"
+	}
+	if {[::config::getKey start_ns_server] == "messenger.hotmail.com:1863"} {
+		::config::setKey start_ns_server "msnmsgr.escargot.chat:1863"
+	}
+	if {[::config::getKey default_gateway_server] == "gateway.messenger.hotmail.com"} {
+		::config::setKey default_gateway_server "msnmsgr.escargot.chat"
+	}
+	if {[::config::getKey start_gateway_server] == "gateway.messenger.hotmail.com"} {
+		::config::setKey start_gateway_server "msnmsgr.escargot.chat"
 	}
 	#Force to change the path to the new path of plwav.exe
 	if { [OnWin] } {
