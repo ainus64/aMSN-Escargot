@@ -370,6 +370,11 @@ proc ::combobox::SetBindings {w} {
         "::combobox::Select [list $widgets(this)] \
          \[$widgets(listbox) nearest %y\]; break"
 
+    # Keep the dropdown's global grab on its own toplevel so clicks on
+    # listbox children reach their bindings instead of the combobox frame.
+    bind $widgets(dropdown) <ButtonPress-1> \
+	[list ::combobox::HandlePopupClick $widgets(this) %X %Y]
+
     bind $widgets(vsb) <ButtonPress-1>   {continue}
     bind $widgets(vsb) <ButtonRelease-1> {continue}
 
@@ -398,6 +403,22 @@ proc ::combobox::SetBindings {w} {
     catch {
 	bind $widgets(entry) <MouseWheel> \
 	    [list ::combobox::HandleEvent $widgets(this) <MouseWheel> %D]
+    }
+}
+
+# Close the dropdown when a global-grabbed click lands outside its toplevel.
+proc ::combobox::HandlePopupClick {w rootX rootY} {
+    upvar ::combobox::${w}::widgets widgets
+
+    set left [winfo rootx $widgets(dropdown)]
+    set top [winfo rooty $widgets(dropdown)]
+    set right [expr {$left + [winfo width $widgets(dropdown)]}]
+    set bottom [expr {$top + [winfo height $widgets(dropdown)]}]
+
+    if {$rootX < $left || $rootX >= $right ||
+	$rootY < $top || $rootY >= $bottom} {
+	$widgets(this) close
+	return -code break
     }
 }
 
@@ -1367,7 +1388,7 @@ proc ::combobox::WidgetProc {w command args} {
 	    # *gasp* do a global grab!!! Mom always told me not to
 	    # do things like this, but sometimes a man's gotta do
 	    # what a man's gotta do.
-	    catch {grab -global $widgets(this)}
+	    catch {grab -global $widgets(dropdown)}
 
 	    # fake the listbox into thinking it has focus. This is 
 	    # necessary to get scanning initialized properly in the
@@ -1388,7 +1409,7 @@ proc ::combobox::WidgetProc {w command args} {
 	    # trying to set any other grab because we really really
 	    # really want to make sure the grab is released.
 	    catch {focus $oldFocus} result
-	    catch {grab release $widgets(this)}
+	    catch {grab release $widgets(dropdown)}
 	    catch {
 		set status [lindex $oldGrab 1]
 		if {$status == "global"} {
