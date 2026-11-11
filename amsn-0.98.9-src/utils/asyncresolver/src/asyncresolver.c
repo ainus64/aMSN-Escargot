@@ -4,6 +4,7 @@
 #include <tcl.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 
 #ifdef _WIN32
@@ -192,7 +193,8 @@ Sockname_Cmd(ClientData cdata,
     socklen_t size = sizeof(struct sockaddr_in);
 #endif
 
-    Tcl_Channel *channel = NULL;
+    Tcl_Channel channel = NULL;
+    ClientData channelHandle;
     char *channelName = NULL;
     int mode;
 
@@ -208,7 +210,12 @@ Sockname_Cmd(ClientData cdata,
     if (channel == NULL) {
       return TCL_ERROR;
     }
-    if (Tcl_GetChannelHandle (channel, mode, &sock) == TCL_OK) {
+    if (Tcl_GetChannelHandle (channel, mode, &channelHandle) == TCL_OK) {
+#ifdef _WIN32
+        sock = (SOCKET)(uintptr_t)channelHandle;
+#else
+        sock = (int)(intptr_t)channelHandle;
+#endif
 	if (getsockname(sock, pSockname, &size) >= 0) {
           Tcl_Obj *result = NULL;
           Tcl_Obj *ip = NULL;

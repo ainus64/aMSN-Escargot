@@ -237,6 +237,7 @@ yuv422p_to_rgb24(void *h, struct ng_video_buf *out, struct ng_video_buf *in)
     out->info = in->info;
 }
 
+static void
 uyvy_to_rgb24(void *h, struct ng_video_buf *out, struct ng_video_buf *in)
 {
     uint8_t *restrict s, *restrict d;

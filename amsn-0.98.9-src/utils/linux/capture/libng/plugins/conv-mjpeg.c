@@ -9,6 +9,9 @@
 
 #include "grab-ng.h"
 
+static int jpeg_load_dht(j_common_ptr info, JHUFF_TBL *ac_tables[],
+                         JHUFF_TBL *dc_tables[]);
+
 /* ---------------------------------------------------------------------- */
 
 struct mjpeg_compress {
@@ -669,7 +672,7 @@ jpeg_odml_dht[0x1a4] = {
 };
  
 /* Parse the DHT table */
-int jpeg_load_dht (j_common_ptr info, JHUFF_TBL* ac_tables[], JHUFF_TBL* dc_tables[])
+static int jpeg_load_dht (j_common_ptr info, JHUFF_TBL* ac_tables[], JHUFF_TBL* dc_tables[])
 {
     unsigned int length = (jpeg_odml_dht[2] << 8) + jpeg_odml_dht[3] - 2;
     unsigned int pos = 4;

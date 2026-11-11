@@ -53,13 +53,6 @@
  #define CXIMAGE_SUPPORT_WINDOWS 0
 #endif
 
-#ifndef min
-#define min(a,b) (((a)<(b))?(a):(b))
-#endif
-#ifndef max
-#define max(a,b) (((a)>(b))?(a):(b))
-#endif
-
 #ifndef PI
  #define PI 3.141592653589793f
 #endif
@@ -201,6 +194,13 @@ typedef struct tagcomplex {
 
 #define _cabs(c) sqrt(c.x*c.x+c.y*c.y)
 
+#endif
+
+#ifndef min
+#define min(a,b) (((a)<(b))?(a):(b))
+#endif
+#ifndef max
+#define max(a,b) (((a)>(b))?(a):(b))
 #endif
 
 #endif //__ximadefs
