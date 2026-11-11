@@ -79,9 +79,9 @@
 	</file>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/actionsmenu/actionsmenu.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/actionsmenu/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/actionsmenu/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/actionsmenu/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/actionsmenu/actionsmenu.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/actionsmenu/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/actionsmenu/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/actionsmenu/$file</file>
 	</URL>
 </plugin>

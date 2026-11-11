@@ -65,10 +65,10 @@
 	</lang>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/gnotify/gnotify.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/gnotify/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/gnotify/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/gnotify/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/gnotify/gnotify.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/gnotify/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/gnotify/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/gnotify/$file</file>
 	</URL>
 
 </plugin>

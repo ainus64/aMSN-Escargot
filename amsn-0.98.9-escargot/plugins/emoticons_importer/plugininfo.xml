@@ -24,10 +24,10 @@
 		<version>11094</version>
 	</lang>
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/emoticon_importer/emoticon_imporer.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/emoticon_importer/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/emoticon_importer/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/emoticon_importer/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/emoticon_importer/emoticon_imporer.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/emoticon_importer/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/emoticon_importer/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/emoticon_importer/$file</file>
 	</URL>
 
 </plugin>

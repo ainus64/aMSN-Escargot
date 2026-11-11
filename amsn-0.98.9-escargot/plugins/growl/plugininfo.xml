@@ -62,9 +62,9 @@
 	</lang>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/growl/growl.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/growl/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/growl/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/growl/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/growl/growl.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/growl/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/growl/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/growl/$file</file>
 	</URL>
 </plugin>

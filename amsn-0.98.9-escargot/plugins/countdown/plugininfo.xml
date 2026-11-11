@@ -42,10 +42,10 @@
         </lang>
 
         <URL>
-                <main>http://www.amsn-project.net/autoupdater/plugins/countdown/countdown.tcl</main>
-                <plugininfo>http://www.amsn-project.net/autoupdater/plugins/countdown/plugininfo.xml</plugininfo>
-                <lang>http://www.amsn-project.net/autoupdater/plugins/countdown/lang/lang$langcode</lang>
-                <file>http://www.amsn-project.net/autoupdater/plugins/countdown/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/countdown/countdown.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/countdown/plugininfo.xml</plugininfo>
+                <lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/countdown/lang/lang$langcode</lang>
+                <file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/countdown/$file</file>
         </URL>
 
 

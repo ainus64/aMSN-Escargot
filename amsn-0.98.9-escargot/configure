@@ -7153,7 +7153,7 @@ EOF
 if test x"$HAVE_FARSTREAM" != "xyes" -a x"$HAVE_FARSIGHT" != "xyes"; then
    echo "*** You do not seem to have gstreamer and farsight2 or farstream installed."
    echo "*** You will not be able to build the required component for audio conversations."
-   echo "*** Read this for more information : http://amsn-project.net/wiki/Farsight"
+   echo "*** Read this for more information : https://github.com/ainus64/aMSN-Escargot/wiki/Farsight"
 fi
 
 exit 0

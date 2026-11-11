@@ -13,7 +13,7 @@ TkCximage was developed for the aMSN chat client by the aMSN team. It provides a
 
 While CXimage itself is available under the zlib license, TkCximage is available under the LGPL version 2.1. Please see "licence.txt" for the license details. 
 
-Currently the only way to build TkCXimage is to run "configure; make" in the toplevel aMSN directory, available from aMSN's SVN repository at http://www.amsn-project.net. This will build all binary modules for aMSN on Linux/MacOSX systems, and possibly Windows. 
+Currently the only way to build TkCXimage is to run "configure; make" in the toplevel aMSN directory, available from aMSN's SVN repository at https://github.com/ainus64/aMSN-Escargot. This will build all binary modules for aMSN on Linux/MacOSX systems, and possibly Windows.
 
 TkCXimage author: The aMSN Team.
 TkCXimage documentation: Kevin Walzer, kw@codebykevin.com

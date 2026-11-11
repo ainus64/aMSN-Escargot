@@ -68,10 +68,10 @@
 	</lang>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins2/ColoredNicks/colorednicks.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins2/ColoredNicks/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins2/ColoredNicks/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins2/ColoredNicks/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/ColoredNicks/colorednicks.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/ColoredNicks/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/ColoredNicks/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/ColoredNicks/$file</file>
 	</URL>
 
 </plugin>

@@ -1,5 +1,5 @@
 Dažnai Užduodami Klausimai
-Šio DUK vėliausią versiją galite rasti adresu http://amsn-project.net/faq.php
+Šio DUK vėliausią versiją galite rasti adresu https://github.com/ainus64/aMSN-Escargot/faq.php
 
 DUK 2.1.0 
 
@@ -130,9 +130,9 @@ Jūs dabar galite uždaryti šį „Console“ langą ir sekantį kartą uždara
 
 == Aš nematau dėklo, net tada, kai aš įjungiu jį, kokia tai problema? ==
 
-Linux: Įsitikinkite, ar egzistuoja msn/utils/linux/traydock/libtray.so rinkmena. Jei jos nėra, įsitikinkite, ar jūs atsisiųntėte oficialų aMSN paketą iš: http://amsn-project.net/download.php 
+Linux: Įsitikinkite, ar egzistuoja msn/utils/linux/traydock/libtray.so rinkmena. Jei jos nėra, įsitikinkite, ar jūs atsisiųntėte oficialų aMSN paketą iš: https://github.com/ainus64/aMSN-Escargot/download.php
 
-Jei jūs patys surinkote aMSN, įsitikinkite, kad jūs turite įdiegtus X11 kūriamuosius paketus ir pagal šį puslapį surinkote aMSN teisingai: http://amsn-project.net/wiki/Compiling_aMSN
+Jei jūs patys surinkote aMSN, įsitikinkite, kad jūs turite įdiegtus X11 kūriamuosius paketus ir pagal šį puslapį surinkote aMSN teisingai: https://github.com/ainus64/aMSN-Escargot/wiki/Compiling_aMSN
 
 PASTABA: Mac OS X sistemoje nėra dėklo piktogramos
 
@@ -172,7 +172,7 @@ Jei vaizdas yra prastos kokybės, tai yra turbūt todėl, kad kito vartotojo kam
 
 == Aš negaliu perskaityti kinų arba japonų kalbos su aMSN, net po teksto kodavimo keitimo. Kur aš galiu surasti pagalbą? == 
 
-Prašau perskaitykite dokumentaciją apie SCIM veikimą su aMSN (http://amsn-project.net/wiki/SCIM_Input)
+Prašau perskaitykite dokumentaciją apie SCIM veikimą su aMSN (https://github.com/ainus64/aMSN-Escargot/wiki/SCIM_Input)
 
 
 
@@ -185,7 +185,7 @@ Prašau perskaitykite dokumentaciją apie SCIM veikimą su aMSN (http://amsn-pro
  (gdb) bt
  (gdb) bt full
 
-Kai jūs gausite klaidos pranešimo informaciją, prašome praneškite šią informaciją į forumą: http://amsn-project.net/forums 
+Kai jūs gausite klaidos pranešimo informaciją, prašome praneškite šią informaciją į forumą: https://github.com/ainus64/aMSN-Escargot/forums
 ĮSITIKINKITE PIRMIAU IEŠKODAMI FORUME, KAD PAMATYTUMĖTE, AR TAI NEBUVO JAU PRANEŠTA
 
 
@@ -302,7 +302,7 @@ Galiausiai, jei nė vienas iš minėtų atvejų nepadėjo, bandykite išjungti k
 
 == Kokie yra klaviatūros šaukiniai? ==
 
-Naujausias klaviatūros šaukinių sąrašas yra puslapyje adresu: http://amsn-project.net/wiki/Shortcuts . 
+Naujausias klaviatūros šaukinių sąrašas yra puslapyje adresu: https://github.com/ainus64/aMSN-Escargot/wiki/Shortcuts .
 
 
 
@@ -335,7 +335,7 @@ Nustatinėjant savo AŽ, jums reikia spragtelti ant meniu „Paskyra“, po to �
 
 Jei jūs norite prie ankstesnių žinučių, kurias siuntėte pokalbių languose, jums reikia naudoti tik Control mygtuką su rodyklėmis. Tai veikia taip pat kaip ir komandinėje eilutėje, taigi  Ctrl-Up (Command-Up Mac OS X sistemoje) duoda ankstesnes žinutes ir Ctrl-Down(Command-Down Mac OS X sistemoje) duoda vėlesnes žinutes. 
 
-Visą sąrašą klaviatūros šaukinių galite pamatyti puslapyje adresu: http://amsn-project.net/wiki/Shortcuts 
+Visą sąrašą klaviatūros šaukinių galite pamatyti puslapyje adresu: https://github.com/ainus64/aMSN-Escargot/wiki/Shortcuts
 
 
 
@@ -417,7 +417,7 @@ Tas pats gali būti padaryta slapyvardžiams, esantiems pokalbių lange, atžym�
 
 Šių .cam rinkmenų formatas yra tiesiog krūva duomenų lizde, kurie pateikiami MS nuosavu formatu. Dėl šios priežasties, nėra grotuvų, kurie galėtų paleisti šias rinkmenas, tik amsn.
 
-Iš tikrųjų yra priemonė tai padaryti, kurį išleido Hyriand (tik linux). Žiūrėti http://amsn-project.net/forums/viewtopic.php?t=2954
+Iš tikrųjų yra priemonė tai padaryti, kurį išleido Hyriand (tik linux). Žiūrėti https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?t=2954
 
 
 
@@ -474,7 +474,7 @@ siekdami išsaugoti rinkmenas aplankale, kur paleidžiate aMSN.
 
 == Kaip aš galiu naudoti aMSN glotnius šriftus? ==
 
-Naudokite distributyvą, kuris turi tcl/tk 8.5 ar aukštesnį, arba žvilgtelkite į: http://amsn-project.net/wiki/Enabling_antialiasing
+Naudokite distributyvą, kuris turi tcl/tk 8.5 ar aukštesnį, arba žvilgtelkite į: https://github.com/ainus64/aMSN-Escargot/wiki/Enabling_antialiasing
 Šis puslapis parodys, kaip perinkti Tk, ka palaikytų glotnius šriftus. 
 
 
@@ -595,7 +595,7 @@ Atnaujinkite aMSN iki naujausios versijos (0,97 ar aukštesnės) ir jūs galėsi
 
 == Kaip man atnaujinti aMSN iki naujausios kūriamosios versijos Mac sistemoje? ==
 
-Instrukcijas, kai atnaujinti, rasite wiki puslapyje adresu: http://amsn-project.net/wiki/SVN wiki page. 
+Instrukcijas, kai atnaujinti, rasite wiki puslapyje adresu: https://github.com/ainus64/aMSN-Escargot/wiki/SVN wiki page.
 
 == Aš noriu ištrinti aMSN, bet negaliu išvalyti Šiukšlinės! ==
 
@@ -623,7 +623,7 @@ Garso ir vaizdo vedliu galima lengvai formuoti ir valdyti jūsų kamerą taip pa
 
 Garso ir vaizdo vedlys gali būti paleistas per pokalbių langą spragtelėjus „Taisa“ > „Nustatyti garsą ir vaizdą“. Pasirodys kameros formavimo dialogas. Jūs galite pakeisti savo vaizdo nustatymus spragteldami mygtuką „Keisti vaizdo nustatymus“. 
 
-Jūs taip pat galite paleisti vedlį naudodami Ctrl-N šaukinį pagrindiniame lange. Remkitės http://amsn-project.net/wiki/Shortcuts puslapiu, kuriame rasite naujausius klaviatūros šaukinių sąrašą. 
+Jūs taip pat galite paleisti vedlį naudodami Ctrl-N šaukinį pagrindiniame lange. Remkitės https://github.com/ainus64/aMSN-Escargot/wiki/Shortcuts puslapiu, kuriame rasite naujausius klaviatūros šaukinių sąrašą.
 
 
 
@@ -678,7 +678,7 @@ Garso palaikymas uždelsiamas iki sekančios versijos. Farsight projektas, kurį
 
 == Aš turiu kitokį klausimą, ar galite padėti man? == 
 
-Taip, mes galime. Bet prieš užduodami klausimus, ieškokite savo klausimo šiame wiki. Jei jūs negalite rasti atsakymo, tada pažiūrėkite į aMSN forumus, kuriuos rasite tinklapyje: http://amsn-project.net/forums 
+Taip, mes galime. Bet prieš užduodami klausimus, ieškokite savo klausimo šiame wiki. Jei jūs negalite rasti atsakymo, tada pažiūrėkite į aMSN forumus, kuriuos rasite tinklapyje: https://github.com/ainus64/aMSN-Escargot/forums
 
 Prieš pateikdami klausimą forume, pasinaudokite PAIEŠKA
 
@@ -708,7 +708,7 @@ Galimi būdai, kaip pakartoti klaidą: Atidarykite pokalbių langą ir nusiųski
 Nusiųskite šią informaciją su savo klaidos pranešimu, kad mes galėtume toliau ištirti iškilusią problemą. 
 
 
-Jei jūs vis dar turite klausimą, kuris nebuvo aptartas šiame DUK, jūs galite aplankyti aMSN forumą adresu: http://amsn-project.net/forums arba susisiekite su mumis per IRC (Internet Relay Chat): 
+Jei jūs vis dar turite klausimą, kuris nebuvo aptartas šiame DUK, jūs galite aplankyti aMSN forumą adresu: https://github.com/ainus64/aMSN-Escargot/forums arba susisiekite su mumis per IRC (Internet Relay Chat):
 
 serveris: irc.freenode.net kanalas: #amsn 
 

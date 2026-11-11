@@ -24,9 +24,9 @@
     <version>11323</version>
   </file>
   <URL>
-    <main>http://www.amsn-project.net/autoupdater/plugins/Kryptonite/kryptonite.tcl</main>
-    <plugininfo>http://www.amsn-project.net/autoupdater/plugins/Kryptonite/plugininfo.xml</plugininfo>
-    <lang>http://www.amsn-project.net/autoupdater/plugins/Kryptonite/lang/lang$langcode</lang>
-    <file>http://www.amsn-project.net/autoupdater/plugins/Kryptonite/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/Kryptonite/kryptonite.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/Kryptonite/plugininfo.xml</plugininfo>
+    <lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/Kryptonite/lang/lang$langcode</lang>
+    <file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/Kryptonite/$file</file>
   </URL>
 </plugin>

@@ -74,10 +74,10 @@
 	</lang>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins2/WebcamShooter/camshoot.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins2/WebcamShooter/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins2/WebcamShooter/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins2/WebcamShooter/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/WebcamShooter/camshoot.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/WebcamShooter/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/WebcamShooter/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/WebcamShooter/$file</file>
 	</URL>
 
 </plugin>

@@ -99,9 +99,9 @@
             <version>11712</version>
     </file>
     <URL>
-        <main>http://www.amsn-project.net/autoupdater/plugins/jake/jake.tcl</main>
-        <plugininfo>http://www.amsn-project.net/autoupdater/plugins/jake/plugininfo.xml</plugininfo>
-        <lang>http://www.amsn-project.net/autoupdater/plugins/jake/lang/lang$langcode</lang>
-        <file>http://www.amsn-project.net/autoupdater/plugins/jake/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/jake/jake.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/jake/plugininfo.xml</plugininfo>
+        <lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/jake/lang/lang$langcode</lang>
+        <file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/jake/$file</file>
     </URL>
 </plugin>

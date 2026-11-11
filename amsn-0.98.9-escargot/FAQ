@@ -1,5 +1,5 @@
 Frequently Asked Questions
-The latest version of this FAQ can be found at http://amsn-project.net/faq.php
+The latest version of this FAQ can be found at https://github.com/ainus64/aMSN-Escargot/faq.php
 
 FAQ 2.1.0 
 
@@ -129,9 +129,9 @@ You can now close this new Console window and the next time you close aMSN's mai
 
 
 == I don't see the traydock even if I enabled it, what's the problem? == 
-Linux: Make sure the file msn/utils/linux/traydock/libtray.so exists. If it does not exist, make sure you download an official package of aMSN at: http://amsn-project.net/download.php 
+Linux: Make sure the file msn/utils/linux/traydock/libtray.so exists. If it does not exist, make sure you download an official package of aMSN at: https://github.com/ainus64/aMSN-Escargot/download.php
 
-If you compiled aMSN yourself, please make sure you have the X11 development packages installed and follow this page to compile aMSN correctly : http://amsn-project.net/wiki/Compiling_aMSN
+If you compiled aMSN yourself, please make sure you have the X11 development packages installed and follow this page to compile aMSN correctly : https://github.com/ainus64/aMSN-Escargot/wiki/Compiling_aMSN
 
 NOTE: There is no traydock icon on Mac OS X 
 
@@ -174,7 +174,7 @@ If the image is of a poor quality, it's probably because the other user's webcam
 
 == I can't read Chinese or Japanese with aMSN, even after changing the text encoding. Where can I find help? == 
 
-Please read the documentation about getting SCIM to work with aMSN (http://amsn-project.net/wiki/SCIM_Input )
+Please read the documentation about getting SCIM to work with aMSN (https://github.com/ainus64/aMSN-Escargot/wiki/SCIM_Input )
 
  
 
@@ -187,7 +187,7 @@ Make sure amsn was compiled with debugging symbols, if you installed it using a 
  (gdb) bt
  (gdb) bt full
 
-You will then receive the bug report information. Please report this information to the forums: http://amsn-project.net/forums 
+You will then receive the bug report information. Please report this information to the forums: https://github.com/ainus64/aMSN-Escargot/forums
 MAKE SURE THAT YOU SEARCH THE FORUMS FIRST TO SEE IF IT WAS ALREADY REPORTED 
 
  
@@ -308,7 +308,7 @@ Make you sure the file /etc/localtime exists. If it doesn't, link it to /usr/sha
 
 == What are the keyboard shortcuts ? == 
 
-For and up to date list of keyboard shortcuts, please read the http://amsn-project.net/wiki/Shortcuts page. 
+For and up to date list of keyboard shortcuts, please read the https://github.com/ainus64/aMSN-Escargot/wiki/Shortcuts page.
 
  
 
@@ -341,7 +341,7 @@ To set your PSM, you need to click on the "Account" menu then "Change nick ...",
 
 If you want to access previous messages you sent in your chat windows you only need to use the Control key with the arrows. It works the same way as in a shell so Ctrl-Up(Command-Up on MacOSX) gives you the previous message sent and Ctrl-Down(Command-Down on Mac OS X), the next one. 
 
-See the http://amsn-project.net/wiki/Shortcuts page for a list of all keyboard shortcuts. 
+See the https://github.com/ainus64/aMSN-Escargot/wiki/Shortcuts page for a list of all keyboard shortcuts.
 
  
 
@@ -434,7 +434,7 @@ The same can be done for nicknames inside the chat window conversations by disab
 
 The file format of those .cam files are a direct dump of the data received on the socket, which means it's in the MS proprietary format. For this reason, no player can play those files, only amsn. 
 
-Actually there's a tool to do it released by Hyriand (linux only). See http://amsn-project.net/forums/viewtopic.php?t=2954 
+Actually there's a tool to do it released by Hyriand (linux only). See https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?t=2954
 
  
 
@@ -493,7 +493,7 @@ in order to save the files in the directory where aMSN is launched.
 
 == How can I use anti-aliased fonts in aMSN? == 
 
-Use a distro that has tcl/tk 8.5 or higher, or take a look at: http://amsn-project.net/wiki/Enabling_antialiasing
+Use a distro that has tcl/tk 8.5 or higher, or take a look at: https://github.com/ainus64/aMSN-Escargot/wiki/Enabling_antialiasing
 That page will provide you information on how to re-compile Tk with anti-alias support. 
 
  
@@ -615,7 +615,7 @@ Update to the latest aMSN version (0.97 or higher), and you will then be able to
 
 == How do I update aMSN to the latest development version on a Mac? == 
 
-Up to date instructions on how to do this can be found at the http://amsn-project.net/wiki/SVN wiki page. 
+Up to date instructions on how to do this can be found at the https://github.com/ainus64/aMSN-Escargot/wiki/SVN wiki page.
 
 == I want to delete aMSN but I cannot empty the Trash! == 
 
@@ -643,7 +643,7 @@ The Audio and Video Assistant is an easy way to configure and fine-tune your web
 
 The Audio and Video Assistant can be started from within a chat window by clicking 'Edit' ? 'Edit audio and video settings'. The Configure Webcam dialog will then be shown. You may change your video settings by clicking “Change video settings” button. 
 
-You can also start the assistant using the Ctrl-N shortcut from the main window. Refer to the http://amsn-project.net/wiki/Shortcuts page for an up to date list of keyboard shortcuts. 
+You can also start the assistant using the Ctrl-N shortcut from the main window. Refer to the https://github.com/ainus64/aMSN-Escargot/wiki/Shortcuts page for an up to date list of keyboard shortcuts.
 
  
 
@@ -696,7 +696,7 @@ About Audio support, it is delayed for a next release. Farsight project, develop
 
 == I have another question, can you help me? == 
 
-Yes, we can. But before asking questions, search this wiki for your question. If you couldn't find it, then take a look at the aMSN forums found at: http://amsn-project.net/forums 
+Yes, we can. But before asking questions, search this wiki for your question. If you couldn't find it, then take a look at the aMSN forums found at: https://github.com/ainus64/aMSN-Escargot/forums
 
 Make sure you SEARCH before posting 
 
@@ -727,7 +727,7 @@ Possible ways to replicate the bug : Open a chat window and send a custom emotic
 Send this information with your bug report so that we may further investigate the issue. 
 
 
-If you still have a question that has not been covered in this FAQ, you can visit the aMSN forum at: http://amsn-project.net/forums or contact us on IRC (Internet Relay Chat) at : 
+If you still have a question that has not been covered in this FAQ, you can visit the aMSN forum at: https://github.com/ainus64/aMSN-Escargot/forums or contact us on IRC (Internet Relay Chat) at :
 
 server: irc.freenode.net channel: #amsn 
 

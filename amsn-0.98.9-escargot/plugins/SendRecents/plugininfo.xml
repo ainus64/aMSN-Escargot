@@ -26,9 +26,9 @@
 		<version>11120</version>
 	</lang>
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/SendRecents/sendrecents.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/SendRecents/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/SendRecents/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/SendRecents/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/SendRecents/sendrecents.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/SendRecents/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/SendRecents/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/SendRecents/$file</file>
 	</URL>
 </plugin>

@@ -12,7 +12,7 @@
 		 <deinit_procedure>deInit</deinit_procedure>
 		 <cvs_version>20091225</cvs_version>
 		 <url>
-     		   <plugininfo>http://www.amsn-project.net/autoupdater/plugins/whatis/plugininfo.xml</plugininfo>
-		    	<main>http://www.amsn-project.net/autoupdater/plugins/whatis/whatis.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/whatis/plugininfo.xml</plugininfo>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/whatis/whatis.tcl</main>
      	 </url>
 </plugin>

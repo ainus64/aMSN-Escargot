@@ -160,7 +160,7 @@ RULES THAT MUST BE FOLLOWED:
 ----------------------------
 1. Download the latest langfile you want to work on from the website
 or via SVN. You will find the link at the translation page:
-http://www.amsn-project.net/translations.php
+https://github.com/ainus64/aMSN-Escargot/translations.php
 -NEVER use files from a stable AMSN package, as they are probably out
 of date, and you'll find yourself translating many keys that are
 already translated in the latest language file version.
@@ -277,7 +277,7 @@ we will fix things up ;-)
 When in doubt, ask! (amsn-lang@lists.sourceforge.net)
 
 2. Download the english language (langen) file from
-http://www.amsn-project.net/translations.php
+https://github.com/ainus64/aMSN-Escargot/translations.php
 
 3. Rename the file to langXX, where XX the ISO language code you've
 chosen. Remember that, for some languages, the ISO code has three

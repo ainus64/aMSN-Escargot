@@ -60,7 +60,7 @@
 	* [r12291] Fix a possible bug on mac, after renaming toplevel, use
 	  'catch' to avoid unnecessary errors..
 	  Reported here :
-	  http://www.amsn-project.net/forums/index.php?topic=8135.msg47770#msg47770
+	  https://github.com/ainus64/aMSN-Escargot/forums/index.php?topic=8135.msg47770#msg47770
 
 2011-02-08 11:02  billiob
 

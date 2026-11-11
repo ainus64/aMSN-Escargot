@@ -42,7 +42,7 @@ Version:	%{_version}
 Release:	%{_release}
 License:	GPL
 Group:		Productivity/Networking/InstantMessaging
-URL:		http://www.amsn-project.net/
+URL:		https://github.com/ainus64/aMSN-Escargot/
 Source:		http://dl.sourceforge.net/sourceforge/amsn/%{name}-%{_src_version}.tar.gz
 Requires:	tcl >= 8.4
 Requires:	tk >= 8.4
@@ -57,7 +57,7 @@ Distribution:	%{_distribution}
 %description
 This is Tcl/Tk clone that implements the Microsoft Messenger (MSN) for
 Unix,Windows, or Macintosh platforms. It supports file transfers,
-groups, and many more features. Visit http://amsn-project.net/ for
+groups, and many more features. Visit https://github.com/ainus64/aMSN-Escargot/ for
 details. This is an ongoing project, and it is already going pretty
 well.
 
@@ -65,13 +65,13 @@ well.
 amsn est un client Microsoft Messenger (MSN) pour UNIX, Windows et
 Macintosh écrit en Tcl/Tk.  Il supporte les tranferts de fichiers, les
 groupes et beaucoup d'autres possibilités...
-Visitez http://amsn-project.net/ pour de plus amples détails.
+Visitez https://github.com/ainus64/aMSN-Escargot/ pour de plus amples détails.
 
 %description -l de
 amsn ist ein Microsoft Messenger (MSN) Client fr UNIX, Windows und
 Macintosh, der in Tcl/Tk geschrieben ist. Es untersttzt
 Dateibertragungen, Gruppen uvm.
-Begeben Sie sich auf http://amsn-project.net/ um mehr ber dieses
+Begeben Sie sich auf https://github.com/ainus64/aMSN-Escargot/ um mehr ber dieses
 Projekt zu erfahren.
 
 %prep

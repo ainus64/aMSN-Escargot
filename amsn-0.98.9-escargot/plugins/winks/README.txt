@@ -90,11 +90,11 @@
 
       Plugins forum:
 
-         http://www.amsn-project.net/forums/viewforum.php?f=14
+         https://github.com/ainus64/aMSN-Escargot/forums/viewforum.php?f=14
 
       Wink plugin development topic:
 
-         http://www.amsn-project.net/forums/viewtopic.php?t=2366
+         https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?t=2366
 
 
 

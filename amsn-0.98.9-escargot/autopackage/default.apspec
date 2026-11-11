@@ -1,13 +1,13 @@
 # -*-shell-script-*-
 
 [Meta]
-RootName: @amsn-project.net/amsn:$SOFTWAREVERSION
+RootName: @github.com/ainus64/aMSN-Escargot/amsn:$SOFTWAREVERSION
 DisplayName: AMSN MSN client
 ShortName: amsn
 Maintainer: The AMSN Developers <amsn-devel@lists.sourceforge.net>
 Packager: Taj Morton <tajmorton@gmail.com>
 Summary: AMSN is a multiplatform MSN client
-URL: http://www.amsn-project.net
+URL: https://github.com/ainus64/aMSN-Escargot
 License: GNU General Public License, Version 2
 SoftwareVersion: 0.98.9
 # SoftwareVersion: @VERSION@

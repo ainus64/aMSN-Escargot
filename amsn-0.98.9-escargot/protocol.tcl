@@ -6887,7 +6887,7 @@ proc cmsn_ns_handler {item {message ""}} {
 		}
 		928 {
 			# Apparently, the server said invalid passport, so this server was probably cached and your account
-			# was moved to another server (http://www.amsn-project.net/forums/viewtopic.php?p=24823)
+			# was moved to another server (https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?p=24823)
 			# We'll ask the default_ns_server for a new NS that accepts our passport.
 		
 			status_log "Account was probably moved to a different server, NS says invalid passport, changing cached server to default"

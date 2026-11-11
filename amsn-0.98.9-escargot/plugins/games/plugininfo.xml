@@ -92,10 +92,10 @@ A plugin *nem* kompatíbilis az MSN Zone Games-el, csak az aMSN-nel!
 	</file>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/games/Games.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/games/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/games/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/lang/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/games/Games.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/games/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/games/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/lang/$file</file>
 	</URL>
 </plugin>
 

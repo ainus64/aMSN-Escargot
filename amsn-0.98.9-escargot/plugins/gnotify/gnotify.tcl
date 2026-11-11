@@ -8,7 +8,7 @@
 
 
 # For more information on the format and protocol read this article :
-# http://www.amsn-project.net/wiki/index.php/Gmail
+# https://github.com/ainus64/aMSN-Escargot/wiki/index.php/Gmail
 namespace eval ::gnotify {
 	variable config
 	variable configlist
@@ -1184,7 +1184,7 @@ namespace eval ::gnotify {
 	}
 
 	# For more information on the format and protocol read this article :
-	# http://www.amsn-project.net/wiki/index.php/Gmail
+	# https://github.com/ainus64/aMSN-Escargot/wiki/index.php/Gmail
 	proc parseGData { data_bin } {
 		set data(bin) $data_bin
 		set data(len) [string length $data_bin]

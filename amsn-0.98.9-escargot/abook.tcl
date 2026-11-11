@@ -265,8 +265,8 @@ namespace eval ::abook {
 		#Need this timeout thing to avoid the socket blocking...
 		set connection_success -2
 		
-		status_log "Connecting to http://firewall.amsn-project.net/check_connectivity.php?port=$port&id=$random_id" blue
-		if { [catch { ::http::geturl "http://firewall.amsn-project.net/check_connectivity.php?port=$port&id=$random_id" -command "::abook::gotConnectivityReply" -timeout 9500 } res] } { 
+		status_log "Connecting to https://github.com/ainus64/aMSN-Escargot/check_connectivity.php?port=$port&id=$random_id" blue
+		if { [catch { ::http::geturl "https://github.com/ainus64/aMSN-Escargot/check_connectivity.php?port=$port&id=$random_id" -command "::abook::gotConnectivityReply" -timeout 9500 } res] } {
 			after 500 [list set ::connection_success -1]
 			status_log "::abook::getFirewalled failed: $res" red
 		}

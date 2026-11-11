@@ -41,10 +41,10 @@ Linuxon Tk 8.5 kell a működéséhez.</description_hu>
 		<version>10840</version>
 	</lang>
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/transparent/transparent.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/transparent/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/transparent/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/transparent/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/transparent/transparent.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/transparent/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/transparent/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/transparent/$file</file>
 	</URL>
 
 </plugin>

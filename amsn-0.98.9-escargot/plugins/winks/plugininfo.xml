@@ -97,10 +97,10 @@
 		<version>8921</version>
 	</file>
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins2/winks/winks.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins2/winks/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins2/winks/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins2/winks/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/winks/winks.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/winks/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/winks/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins2/winks/$file</file>
 	</URL>
 
 </plugin>

@@ -75,10 +75,10 @@
 	
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/LilyPondIM/LilyPondIM.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/LilyPondIM/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/LilyPondIM/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/LilyPondIM/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/LilyPondIM/LilyPondIM.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/LilyPondIM/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/LilyPondIM/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/LilyPondIM/$file</file>
 	</URL>
 
 </plugin>

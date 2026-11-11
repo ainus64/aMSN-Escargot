@@ -18,8 +18,8 @@
 #	2008-05-10
 #
 #	2008-10-19 :
-#		* Added "dash hack", thanks to nico@nc - http://www.amsn-project.net/forums/profile.php?mode=viewprofile&u=5798
-#		* Re-enable sounds on events: http://www.amsn-project.net/forums/viewtopic.php?t=5824&postdays=0&postorder=asc&start=15 , thanks to nico@nc too
+#		* Added "dash hack", thanks to nico@nc - https://github.com/ainus64/aMSN-Escargot/forums/profile.php?mode=viewprofile&u=5798
+#		* Re-enable sounds on events: https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?t=5824&postdays=0&postorder=asc&start=15 , thanks to nico@nc too
 #		* bumped to version 1.3
 #	2009-03-01 :
 #		* Don't show the event if the user is bloqued (and the "don't show blocked user notification" config is set)

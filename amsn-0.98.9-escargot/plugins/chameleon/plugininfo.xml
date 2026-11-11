@@ -90,10 +90,10 @@ Themes can be added and should be placed either in the themes/ directory of tile
 	</file>
 
 	<URL>
-		<main>http://www.amsn-project.net/autoupdater/plugins/chameleon/chameleon.tcl</main>
-		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/chameleon/plugininfo.xml</plugininfo>
-		<lang>http://www.amsn-project.net/autoupdater/plugins/chameleon/lang/lang$langcode</lang>
-		<file>http://www.amsn-project.net/autoupdater/plugins/chameleon/$file</file>
+	<main>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/chameleon/chameleon.tcl</main>
+	<plugininfo>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/chameleon/plugininfo.xml</plugininfo>
+		<lang>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/chameleon/lang/lang$langcode</lang>
+		<file>https://github.com/ainus64/aMSN-Escargot/autoupdater/plugins/chameleon/$file</file>
 	</URL>
 
 </plugin>

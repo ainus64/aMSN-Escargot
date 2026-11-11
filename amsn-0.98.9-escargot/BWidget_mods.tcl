@@ -9,9 +9,9 @@
 # better first...)
 #
 # See several forum topics, e.g.:
-# - http://www.amsn-project.net/forums/viewtopic.php?p=11765
-# - http://www.amsn-project.net/forums/viewtopic.php?t=1982
-# - http://www.amsn-project.net/forums/viewtopic.php?t=1980
+# - https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?p=11765
+# - https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?t=1982
+# - https://github.com/ainus64/aMSN-Escargot/forums/viewtopic.php?t=1980
 # and several others
 
 ::Version::setSubversionId {$Id: BWidget_mods.tcl 11423 2009-07-30 19:09:06Z kakaroto $}
