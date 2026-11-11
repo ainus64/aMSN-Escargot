@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<plugin>
+	<name>Chameleon</name>
+	<author>KaKaRoTo (Alaoui Youness)</author>
+	<description>This plugin allows you to change aMSN look and feel using the Tile extension for Tk. This changes the way the toolkit looks so you might have a native, Qt or GTK2 look instead of Tk.
+Tile extension must be avalaible before using this plugin, you can get it at http://tktable.sf.net/tile 
+For it to be detected, either install it in your tcl lib directory or copy the tile-0.7.2/ directory to this plugin's directory.
+Themes can be added and should be placed either in the themes/ directory of tile, or in this plugins's themes/ subdirectory</description>
+	<amsn_version>0.96</amsn_version>
+	<plugin_version>0.6</plugin_version>
+	<plugin_file>chameleon.tcl</plugin_file>
+	<plugin_namespace>chameleon</plugin_namespace>
+	<init_procedure>InitFromAmsn</init_procedure>
+	<deinit_procedure>DeInitChameleon</deinit_procedure>
+
+	<cvs_version>8088</cvs_version>
+
+	<lang>
+		<langcode>en</langcode>
+		<version>7909</version>
+	</lang>
+	<lang>
+		<langcode>es</langcode>
+		<version>7909</version>
+	</lang>
+	<lang>
+		<langcode>fr</langcode>
+		<version>7909</version>
+	</lang>
+	<lang>
+		<langcode>hu</langcode>
+		<version>9001</version>
+	</lang>
+	<lang>
+		<langcode>lt</langcode>
+		<version>10397</version>
+	</lang>
+
+	<file>
+		<path>button.tcl</path>
+		<version>6177</version>
+	</file>
+	<file>
+		<path>checkbutton.tcl</path>
+		<version>8088</version>
+	</file>
+	<file>
+		<path>combobox.tcl</path>
+		<version>8247</version>
+	</file>
+	<file>
+		<path>common.tcl</path>
+		<version>8065</version>
+	</file>
+	<file>
+		<path>entry.tcl</path>
+		<version>7242</version>
+	</file>
+	<file>
+		<path>frame.tcl</path>
+		<version>6177</version>
+	</file>
+	<file>
+		<path>labelframe.tcl</path>
+		<version>6177</version>
+	</file>
+	<file>
+		<path>label.tcl</path>
+		<version>6191</version>
+	</file>
+	<file>
+		<path>menubutton.tcl</path>
+		<version>6196</version>
+	</file>
+	<file>
+		<path>notebook.tcl</path>
+		<version>7252</version>
+	</file>
+	<file>
+		<path>pkgIndex.tcl</path>
+		<version>8247</version>
+	</file>
+	<file>
+		<path>radiobutton.tcl</path>
+		<version>8088</version>
+	</file>
+	<file>
+		<path>scrollbar.tcl</path>
+		<version>6836</version>
+	</file>
+
+	<URL>
+		<main>http://www.amsn-project.net/autoupdater/plugins/chameleon/chameleon.tcl</main>
+		<plugininfo>http://www.amsn-project.net/autoupdater/plugins/chameleon/plugininfo.xml</plugininfo>
+		<lang>http://www.amsn-project.net/autoupdater/plugins/chameleon/lang/lang$langcode</lang>
+		<file>http://www.amsn-project.net/autoupdater/plugins/chameleon/$file</file>
+	</URL>
+
+</plugin>
