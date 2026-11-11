@@ -11,14 +11,37 @@ The code retains native components and packaging tools from the legacy aMSN proj
 - PNG, JPEG, and zlib development libraries for the image extensions.
 - **TclTLS** for secure authentication and dispatch connections. It is a separate Tcl package; without it, sign-in may fail.
 
-On Arch Linux, typical build dependencies are `base-devel`, `tcl`, `tk`, `libpng`, `libjpeg-turbo`, and `zlib`. TclTLS is available from the AUR as `tcltls`; install it with your preferred AUR helper. Package names may differ on other distributions.
+### Arch Linux
+
+Install the compiler toolchain, Tcl/Tk, image libraries, and TclTLS:
+
+```sh
+sudo pacman -S --needed base-devel tcl tk libpng libjpeg-turbo zlib
+```
+
+TclTLS is in the AUR as `tcltls`; for example, with `yay`:
+
+```sh
+yay -S tcltls
+```
+
+### Ubuntu
+
+Install the build tools, development headers, and TclTLS:
+
+```sh
+sudo apt update
+sudo apt install build-essential tcl-dev tk-dev libpng-dev libjpeg-dev zlib1g-dev tcl-tls
+```
+
+If `apt` cannot find `tcl-tls`, enable the Ubuntu `universe` repository and retry.
 
 ## Build on Linux
 
 From the repository root, run:
 
 ```sh
-cd amsn-0.98.9-src
+cd amsn-0.98.9-escargot
 ./configure
 make
 ```
@@ -35,7 +58,7 @@ To install it under the prefix detected by `configure` (usually `/usr/local`):
 sudo make install
 ```
 
-If `configure` reports missing Tcl/Tk files or libraries, install the corresponding development packages. If the build succeeds but sign-in reports a TLS error, make sure TclTLS is installed for the same Tcl installation used to run aMSN.
+If `configure` reports missing Tcl/Tk files or libraries, install the corresponding development packages. If the build succeeds but sign-in reports a TLS error, make sure TclTLS is installed for the same Tcl installation used to run aMSN. Ubuntu packages are listed in the [Ubuntu package index](https://packages.ubuntu.com/); Arch packages are listed in the [Arch package database](https://archlinux.org/packages/), while `tcltls` is distributed through the [AUR](https://aur.archlinux.org/packages/tcltls).
 
 ## Quick check
 
