@@ -63,7 +63,10 @@ namespace eval ::config {
 			::config::setKey cam_in_cw 0
 		}
 
-		::config::setKey protocoloverride 0
+		# Escargot supports aMSN's legacy TWN flow on MSNP12; skip the
+		# connect-time fallback to Microsoft's MSNP15 SSO flow.
+		::config::setKey protocol 12
+		::config::setKey protocoloverride 1
 
 		::config::setKey receiveddir [::config::getDefaultDownloadDir]
 
@@ -1022,6 +1025,13 @@ proc load_config {} {
 	}
 	if {[::config::getKey start_gateway_server] == "gateway.messenger.hotmail.com"} {
 		::config::setKey start_gateway_server "msnmsgr.escargot.chat"
+	}
+	# Profiles that used aMSN's automatic protocol selection were forced to
+	# MSNP15. Move those profiles to Escargot's supported MSNP12 flow, while
+	# leaving an explicitly selected protocol alone.
+	if {[::config::getKey protocoloverride] == 0} {
+		::config::setKey protocol 12
+		::config::setKey protocoloverride 1
 	}
 	#Force to change the path to the new path of plwav.exe
 	if { [OnWin] } {
