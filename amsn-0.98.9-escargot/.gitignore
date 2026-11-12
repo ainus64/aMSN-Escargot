@@ -16,7 +16,6 @@ autom4te.cache/
 *.lai
 *.dll
 *.dylib
-amsn
 
 # Configuración y datos locales de aMSN creados al probarlo
 amsn_config/
