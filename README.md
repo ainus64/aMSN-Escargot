@@ -1,6 +1,6 @@
 # aMSN Escargot
 
-![aMSN Escargot contact list](docs/images/amsn-preview.png)
+<img src="docs/images/amsn-preview.png" alt="aMSN Escargot contact list" width="400">
 
 This repository contains a fork of **aMSN 0.98.9**, an open-source instant messaging client written mainly in Tcl/Tk. It is adapted to connect to **Escargot**, a community service compatible with MSN Messenger: Escargot servers are used as defaults, along with the MSNP12/TWN sign-in flow. This is a client, not a server; you need a valid Escargot account to sign in.
 
