@@ -1,29 +1,36 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 
 <skin>
 	<Information>
-		<Author>Sapphire Skin by Gustavo A. Díaz</Author>
-		<Contact>gdiaz@gdnet.com.ar | http://www.gdnet.com.ar - GDNet Projects</Contact>
-		<Description>Dedicated to the great comunity of aMSN.</Description>
-		<Version>2.0 (27.04.2007)</Version>
+		<Author>Windows Live 8 Skin by MadkaT</Author>
+		<Contact>madkat@r2e.cjb.net | http://www.madkatmedia.tk</Contact>
+		<Description>Dedicated to all MSN and Linux usres.</Description>
+		<Version>1.0 (25.02.2012)</Version>
 	</Information>
 	<General>
 		<Colors>
 			<balloonbackground>#ffffff</balloonbackground>
 			<balloonborder>#666666</balloonborder>
-			<balloontext>#444444</balloontext>
-			<notifyfg>#000000</notifyfg>
-			<menubackground>#efefef</menubackground>
-			<menuforeground>#444444</menuforeground>
-			<menuactivebackground>#dddddd</menuactivebackground>
-			<menuactiveforeground>#000000</menuactiveforeground>
+			<balloontext>#666666</balloontext>
+			<notifyfg>#333333</notifyfg>
+			<menubackground>#ECF3F6</menubackground>
+	               <menuforeground>#333333</menuforeground>
+	               <menuactivebackground>#9DC1D1</menuactivebackground>
+	               <menuactiveforeground>#000000</menuactiveforeground>
+			<extrastdwindowcolor>#ECF3F6</extrastdwindowcolor>
+	               <extrabuttonbgcolor>#F1F6F9</extrabuttonbgcolor>
+	               <extrabuttontxtcolor>#333333</extrabuttontxtcolor>
+	               <extrabuttonbgcoloractive>#333333</extrabuttonbgcoloractive>
+	               <extrabuttontxtcoloractive>#ECF3F6</extrabuttontxtcoloractive>
+	               <extralinkcolor>#459AB7</extralinkcolor>
+	               <extralinkcoloractive>#99C9D9</extralinkcoloractive>
+	               <extralinkbgcoloractive>#ECF3F6</extralinkbgcoloractive>
+	               <extracheckbuttonselectedcolor>#ECF3F6</extracheckbuttonselectedcolor>
 		</Colors>
 		<Options>
 			<balloonfont>splainf</balloonfont>
-			<balloonborderwidth>1</balloonborderwidth>
+			<balloonborderwidth>0</balloonborderwidth>
 			<!--Note: On linux, balloonborderwidth 0 gives a border of 1px due to tk platform differences. To have no balloon border, set balloonborderwidth to 0 and have the balloonborder the same colour as the balloonbackground-->
-			<trayblink_delay>500</trayblink_delay>
-			<trayblink_by_status>1</trayblink_by_status>
 		</Options>
 		<Geometry>
 			<notifwidth>210</notifwidth>
@@ -31,20 +38,15 @@
 			<x_notifyclose>188</x_notifyclose>
 			<y_notifyclose>0</y_notifyclose>
 			<x_notifydp>9</x_notifydp>
-			<y_notifydp>25</y_notifydp>
-			<x_notifytext>66</x_notifytext>
-			<y_notifytext>17</y_notifytext>
+			<y_notifydp>33</y_notifydp>
+			<x_notifytext>70</x_notifytext>
+			<y_notifytext>30</y_notifytext>
 			<width_notifytext>136</width_notifytext>
 		</Geometry>
 	</General>
 	
 	<Login>
 		<Colors>
-			<loginbg>#ffffff</loginbg>
-			<loginwidgetbg>#ffffff</loginwidgetbg>
-			<loginfg>#000000</loginfg>
-			<loginurlfg>#0000ff</loginurlfg>
-			<logincheckfg>#ffffff</logincheckfg>
 			<loginbuttonbg>#ffffff</loginbuttonbg>
 			<loginbuttonfg>#000000</loginbuttonfg>
 			<loginbuttonfghover>#000000</loginbuttonfghover>
@@ -55,43 +57,38 @@
 		<Geometry>
 			<loginbuttonx>4</loginbuttonx>
 			<loginbuttony>4</loginbuttony>
-			<loginfieldbd>1</loginfieldbd>
 		</Geometry>
 	</Login>
 
 	<ContactList>
     		<Colors>
-			<mainwindowbg>#efefef</mainwindowbg>
-			<topcontactlistbg>#ffffff</topcontactlistbg>	<!-- color for the top of the contact list, the status part -->
-			<contactlistbg>#ffffff</contactlistbg>	<!-- color of the contact list, where the contacts appear -->
-			<contactlistborderbg>#ffffff</contactlistborderbg>
-			<bannerbg>#ffffff</bannerbg>
-			<mystatus>#666666</mystatus>
-			<myemailwarning>#f80000</myemailwarning>
-			<contact_online>#638000</contact_online>
-			<contact_away>#964b27</contact_away>
-			<contact_noactivity>#4c3269</contact_noactivity>
-			<contact_rightback>#0c446a</contact_rightback>
-			<contact_onphone>#c98600</contact_onphone>
-			<contact_busy>#f80000</contact_busy>
-			<contact_gonelunch>#364fce</contact_gonelunch>
-			<contact_offline>#555753</contact_offline>
-			<contact_hover_box></contact_hover_box> <!-- if it's empty it means don't use it -->
-			<state_online>#333333</state_online>
-			<state_away>#333333</state_away>
-			<state_noactivity>#333333</state_noactivity>
-			<state_rightback>#333333</state_rightback>
-			<state_onphone>#333333</state_onphone>
-			<state_busy>#333333</state_busy>
-			<state_mobile>#333333</state_mobile>
-			<state_gonelunch>#333333</state_gonelunch>
-			<state_offline>#333333</state_offline>
+			<mainwindowbg>#ECF3F6</mainwindowbg>
+			<topcontactlistbg>#105F93</topcontactlistbg>
+			<contactlistbg>#ECF3F6</contactlistbg>
+	               <emailfg>#FFFFFF</emailfg>
+	               <emailhover>#FFFFFF</emailhover>
+	               <emailhoverbg>#105F93</emailhoverbg>
+			<bannerbg>#ECF3F6</bannerbg>
+			<mystatus>#FFFFFF</mystatus>
+			<contact_online>#313031</contact_online>
+			<contact_away>#313031</contact_away>
+			<contact_noactivity>#313031</contact_noactivity>
+			<contact_rightback>#313031</contact_rightback>
+			<contact_onphone>#313031</contact_onphone>
+			<contact_busy>#313031</contact_busy>
+			<contact_gonelunch>#313031</contact_gonelunch>
+			<contact_offline>#313031</contact_offline>
+			<state_online>#A6A4A9</state_online>
+			<state_away>#A6A4A9</state_away>
+			<state_noactivity>#A6A4A9</state_noactivity>
+			<state_rightback>#A6A4A9</state_rightback>
+			<state_onphone>#A6A4A9</state_onphone>
+			<state_busy>#A6A4A9</state_busy>
+			<state_mobile>#A6A4A9</state_mobile>
+			<state_gonelunch>#A6A4A9</state_gonelunch>
+			<state_offline>#A6A4A9</state_offline>
 			<groupcolorextend>#333333</groupcolorextend>
 			<groupcolorcontract>#666666</groupcolorcontract>
-			<groupcolorborder></groupcolorborder> <!-- if it's empty it means use the skin images -->
-			<groupbox>0</groupbox> <!-- it can be 1 or 0. If 1 it draws the internal of the groups box -->
-			<topgroupbg></topgroupbg> <!-- if it's empty it means use the skin images -->
-			<topgroupbg_style></topgroupbg_style> <!-- it works only if topgroupbg is set and style allowed are: light, dark.-->
 		</Colors>
 		 <Options>
 			<mainwindowrelief>flat</mainwindowrelief> <!-- Available options are:  flat/raised/sunken/ridge/groove -->
@@ -103,11 +100,9 @@
 			<showdisplaycontactlist>1</showdisplaycontactlist>
 			<contactlistbgtile>0</contactlistbgtile>
 			<contactlistbgnontiled>1</contactlistbgnontiled>
-			<mydp_hoverimage>1</mydp_hoverimage>
 		 </Options>
 		<Geometry>
 			<mainwindowbd>1</mainwindowbd>
-			<contactlistbd>0</contactlistbd>
 			<buddylistpad>0</buddylistpad>
 			<bigstate_xpad>1</bigstate_xpad>
 			<bigstate_ypad>1</bigstate_ypad>
@@ -115,9 +110,9 @@
 			<mystatus_ypad>0</mystatus_ypad>
 			<mailbox_xpad>7</mailbox_xpad>
 			<mailbox_ypad>0</mailbox_ypad>
-			<contract_xpad>10</contract_xpad>
+			<contract_xpad>3</contract_xpad>
 			<contract_ypad>12</contract_ypad>
-			<expand_xpad>10</expand_xpad>
+			<expand_xpad>3</expand_xpad>
 			<expand_ypad>12</expand_ypad>
 			<x_dp_top>11</x_dp_top>
 			<y_dp_top>11</y_dp_top>
@@ -130,38 +125,38 @@
 
 	<ChatWindow>
 		<Colors>
-			<chatwindowbg>#efefef</chatwindowbg>
-			<tabbarbg>#efefef</tabbarbg>
-			<buttonbarbg>#efefef</buttonbarbg>
-			<chat_buttons_border_color>#efefef</chat_buttons_border_color>
-			<chat_input_border_color>#8f8f8f</chat_input_border_color>
-			<chat_output_border_color>#8f8f8f</chat_output_border_color>
-			<chat_output_back_color>#ffffff</chat_output_back_color>
-			<chat_dp_border_color>#8f8f8f</chat_dp_border_color>
+			<chatwindowbg>#EFF3F7</chatwindowbg>
+			<tabbarbg>#68AAC1</tabbarbg>
+			<buttonbarbg>#F7FBFF</buttonbarbg>
+			<chat_buttons_border_color>#BDD7E7</chat_buttons_border_color>
+			<chat_input_border_color>#BDD7E7</chat_input_border_color>
+			<chat_output_border_color>#BDD7E7</chat_output_border_color>
+			<chat_output_back_color>#FFFFFF</chat_output_back_color>
+			<chat_dp_border_color>#BDD7E7</chat_dp_border_color>
 			<sendbuttonbg>#ffffff</sendbuttonbg>
 			<sendbuttonfg>#000000</sendbuttonfg>
 			<sendbuttonfghover>#000000</sendbuttonfghover>
-			<topbarbg>#f7f7f7</topbarbg>
+			<topbarbg>#EFF3F7</topbarbg>
 			<topbartext>#000000</topbartext>
 			<topbarborder>#7da0af</topbarborder>
-			<topbarawaybg>#dfe7f0</topbarawaybg>
+			<topbarawaybg>#EFF3F7</topbarawaybg>
 			<topbarawaytext>#000000</topbarawaytext>
 			<topbarawayborder>#7da0af</topbarawayborder>
-			<topbarbusybg>#dfe7f0</topbarbusybg>
+			<topbarbusybg>#EFF3F7</topbarbusybg>
 			<topbarbusytext>#000000</topbarbusytext>
 			<topbarbusyborder>#7da0af</topbarbusyborder>
-			<topbarofflinebg>#dfe7f0</topbarofflinebg>
+			<topbarofflinebg>#EFF3F7</topbarofflinebg>
 			<topbarofflinetext>#666666</topbarofflinetext>
 			<topbarofflineborder>#7da0af</topbarofflineborder>
 			<statusbarbg>#f7f7f7</statusbarbg>
 			<statusbarbg_sel>#c6cdd7</statusbarbg_sel>
 			<statusbartext>#666666</statusbartext>
-			<chat_status_border_color>#7da0af</chat_status_border_color>
+			<chat_status_border_color>#BDD7E7</chat_status_border_color>
 		</Colors>
 		<Options>
 			<chat_top_pixmap>1</chat_top_pixmap>
 			<chat_top_resize>scale</chat_top_resize>
-			<chat_top_border>1</chat_top_border>
+			<chat_top_border>0</chat_top_border>
 			<chat_output_border>1</chat_output_border>
 			<chat_buttons_border>1</chat_buttons_border>
 			<chat_input_border>1</chat_input_border>
@@ -173,8 +168,8 @@
 			<chat_show_topframe>1</chat_show_topframe>
 		</Options>
 		<Geometry>
-			<chat_top_padx>7</chat_top_padx>
-			<chat_top_pady>5</chat_top_pady>
+			<chat_top_padx>0</chat_top_padx>
+			<chat_top_pady>0</chat_top_pady>
 			<chat_paned_padx>4</chat_paned_padx>
 			<chat_paned_pady>0</chat_paned_pady>
 			<chat_output_padx>3</chat_output_padx>
@@ -197,16 +192,16 @@
                         <tab_text_x>4</tab_text_x>
                         <tab_text_y>13</tab_text_y>
                         <tab_text_width>100</tab_text_width>
-                        <tab_close_x>100</tab_close_x>
-                        <tab_close_y>8</tab_close_y>
+                        <tab_close_x>105</tab_close_x>
+                        <tab_close_y>7</tab_close_y>
 		</Geometry>
 	</ChatWindow>
 
 	<smileys>
 		
 		<size>
-			<smilew>19</smilew>
-			<smileh>19</smileh>
+			<smilew>21</smilew>
+			<smileh>21</smileh>
 		</size>
 		
 		<emoticon>
@@ -229,7 +224,7 @@
 			<name> Winking smiley </name>
 			<text> ";)" </text>
 			<text> ";-)" </text>
-			<file> Winking_smiley.png </file>
+			<file> Winking_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
@@ -264,7 +259,7 @@
 		<emoticon>
 			<name> Crying smiley </name>
 			<text> ":'(" </text>
-			<file> Crying_smiley.png </file>
+			<file> Crying_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
@@ -298,21 +293,21 @@
 		<emoticon>
 			<name> I dont know </name>
 			<text> ":^)" </text>
-			<file> Dont_know_smiley.png </file>
+			<file> Dont_know_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
 		<emoticon>
 			<name> Thinking smiley </name>
 			<text> "*-)" </text>
-			<file> Thinking_smiley.png </file>
+			<file> Thinking_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
 		<emoticon>
 			<name> Eye-rolling smiley </name>
 			<text> "8-)" </text>
-			<file> Eye_rolling_smiley.png </file>
+			<file> Eye_rolling_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
@@ -320,7 +315,7 @@
 			<name> Sleepy smiley </name>
 			<text> "|-)" </text>
 			<text> "|)" </text>
-			<file> Sleepy_smiley.png </file>
+			<file> Sleepy_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
@@ -338,8 +333,8 @@
 		
 		<emoticon>
 			<name> Party Smiley </name>
-			<text> "&lt;:o)" </text>
-			<file> Party_smiley.png </file>
+			<text> ""&lt;:o)" </text>
+			<file> Party_smiley.gif </file>
 			<animated> yes </animated>
 		</emoticon>
 		
@@ -480,14 +475,14 @@
 		<emoticon>
 			<name> Birthday cake </name>
 			<text> "(^)" </text>
-			<file> Birthday_cake.png </file>
+			<file> Birthday_cake.gif </file>
 			<animated> yes </animated>
 		</emoticon> 
 		
 		<emoticon>
 			<name> Cigarette </name>
 			<text> "(ci)" </text>
-			<file> Cigarette.png </file>
+			<file> Cigarette.gif </file>
 			<animated> yes </animated>
 		</emoticon> 
 		
@@ -575,7 +570,7 @@
 		<emoticon>
 			<name> Storm </name>
 			<text> "(li)" </text>
-			<file> Storm.png </file>
+			<file> Storm.gif </file>
 			<animated> yes </animated>
 		</emoticon> 
 		
@@ -619,7 +614,7 @@
 			<name> Bat </name>
 			<text> ":-[" </text>
 			<text> ":[" </text>
-			<file> Bat.png </file>
+			<file> Bat.gif </file>
 			<animated> yes </animated>
 		</emoticon> 
 		
@@ -730,11 +725,28 @@
 			<text> "(mo)" </text>
 			<file> Money.png </file>
 		</emoticon>
-
+		
 		<emoticon>
 			<name> Rabbit </name>
 			<text> "('.')" </text>
 			<file> Rabbit.png </file>
 		</emoticon>
 		
+		<emoticon>
+			<name> Asl </name>
+			<text> "(?)" </text>
+			<file> Asl.png </file>
+		</emoticon>
+
+		<emoticon>
+			<name> MS Office </name>
+			<text> "(mso)" </text>
+			<file> MSO.png </file>
+		</emoticon>
+
+		<emoticon>
+			<name> Yahoo Messenger </name>
+			<text> "(YIM)" </text>
+			<file> YIM.png </file>
+		</emoticon>
    </smileys>

@@ -1,5 +1,4 @@
-Sapphire Skin by Gustavo A. Díaz - Version: 2.0 (27.04.2007)
-Dedicated to the great comunity of aMSN.
-If you modify this skin, please give credit to the original skin name and author.
+﻿Windows Live 8 Skin by MadkaT - Version: 1.0 (25.02.2012)
+Dedicated to the WLM Users.
 License: GNU/GPL
-Contact: gdiaz@gdnet.com.ar | http://www.gdnet.com.ar - GDNet Projects
+Contact: amsn@r2e.cjb.net | http://www.madkatmedia.tk - MadkaT MediA
